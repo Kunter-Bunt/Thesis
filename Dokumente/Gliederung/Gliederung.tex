@@ -1,0 +1,49 @@
+\documentclass[10pt, a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+\begin{enumerate}
+	\item Einleitung/Übersicht
+	\begin{itemize}
+		\item Motivation (NILM Vorteile und Potential zeigen)
+		\item Was gibt es schon, wie gut funktioniert es? (Hier kann man zeigen, dass die Verfahren meist nur für einzelne Gerätegruppen gut funktionieren)
+		\item Zielsetzung (Hier genau den Teilbereich des NILM Problems abstecken)
+		\item Aufbau der Arbeit beleuchten (also das hier)
+	\end{itemize}
+	
+	\item Daten
+	\begin{itemize}
+		\item Welche Daten wurden benutzt, wie sind sie beschaffen etc. (KIT Smart Home Daten, vllt noch andere wenn sie z.B. schon segmentiert sind. Dann auch Vergleich der Daten ziehen)
+		\item Labeling, Segmentierung beleuchten (Labeling natürlich besonders wichtig, da sich so die Klassen bestimmen)
+	\end{itemize}
+	
+	\item Vorverarbeitung
+	\begin{itemize}
+		\item Einleitung \& Stand der Technik
+		\item Filterungen und Normalisierung der Daten (Hängt stark von den Daten ab)
+		\item Feature Extraction (Hier würde ich die Papers konsultieren und die Features nehmen die sich als gut herausgestellt haben, vllt. kann man auch experimentieren ob die Kombination von mehr Features bessere Ergebnisse bringt) 
+	\end{itemize}
+	
+	\item Klassifizierung
+	\begin{itemize}
+		\item Einleitung \& Stand der Technik
+		\item Aufbau des Netzes ansprechen (Eingabeknoten abhängig von den Features, wie viele Schichten, Art des Netzes wichtig für Anzahl der Ausgabeknoten [Einer oder binäre Interpretation])
+		\item Training (welche Lernmethoden, Aufteilung der Trainingsdaten, etc.)
+	\end{itemize}
+	
+	\item Evaluation
+	\begin{itemize}
+		\item Wie genau ist die Klassifizierung? (Accuracy + Precision \& Recall, weil Accuracy bei wenig benutzten Geräten kaum Aussagekraft hat)
+		\item Versuchsaufbau: Entwickeltes und Baseline System mit k-folds auf dem Datensatz testen und Durchschnitt bilden
+		\item Wichtig hier die Frage nach dem Baseline System (vermutlich ein System was immer "off" ausgibt) 
+		\item Plots von Referenz gegenüber Klassifikation zur Veranschaulichung
+	\end{itemize}
+	
+	\item Ausblick
+	\begin{itemize}
+		\item Bogen zu NILM, welcher Teilbereich gefüllt, was muss noch geschehen?
+	\end{itemize}
+\end{enumerate}
+\end{document}
