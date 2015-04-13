@@ -1,0 +1,62 @@
+
+\def\usesf{}
+\let\usesf\sffamily % diese Zeile auskommentieren für normalen TeX Font
+
+\begin{titlepage}
+
+\typearea[13.125mm]{15}
+
+\setlength{\unitlength}{1mm}
+\begin{picture}(0,0)(6.393,10.244)
+\includegraphics[width=4cm]{logos/kit_logo_de_4c_positiv}
+\end{picture}
+
+\newsavebox{\Prof}
+\savebox{\Prof}{\usesf\small Prof.~Dr.~Hartmut~Schmeck}
+\newsavebox{\Betreuer}
+\savebox{\Betreuer}{\usesf\small Kaibin~Bao}
+\newsavebox{\Diplomant}
+\savebox{\Diplomant}{\usesf Ningyuan~Pan}
+\newsavebox{\Einreichdatum}
+\savebox{\Einreichdatum}{\usesf\small 20.12.2013}
+
+\thispagestyle{empty}
+%
+\vskip 40.4mm
+%
+\begin{center}
+\usesf
+{\Large\bfseries Implementation and evaluation of queuing strategies  \\ [1ex] for Apache Axis2}
+\end{center}
+\vskip 21.2mm % eventuell anpassen bei sehr langen Titeln
+\hspace{45.29mm}
+\begin{minipage}{0.5\textwidth}
+\centering
+\usesf
+Studienarbeit \\ [0.2\baselineskip]
+von \\ [0.2\baselineskip]
+\usebox{\Diplomant} \\ [10.36\baselineskip]
+\begin{small}
+An der Fakultät für \\
+Wirtschaftswissenschaften des KIT \\
+\\
+Im Studiengang \\
+Wirtschaftsingenieurwesen Diplom \\
+\\ [2.3\baselineskip]
+Eingereicht am \usebox{\Einreichdatum} beim \\
+Institut für Angewandte Informatik \\
+und Formale Beschreibungsverfahren \\
+des Karlsruher Instituts für Technologie \\
+\\ [0.4\baselineskip]
+Referent: \usebox{\Prof}\\
+Betreuer: \usebox{\Betreuer}
+\end{small}
+\end{minipage}
+\vfill
+\end{titlepage}
+%% Titelseite Ende
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "diplarb"
+%%% End: 
