@@ -47,6 +47,9 @@
 
 \usepackage[bottom]{footmisc} %Fußnoten immer am Ende der Seite
 
+%\usepackage[T1]{fontenc}
+\usepackage[final]{microtype}
+
 %Definitionen
 
 \newtheoremstyle{mystyle}% name
@@ -102,30 +105,28 @@
 \leftskip=4cm
 		\textbf{{\Huge %TODO
 		Titel der Abschlussarbeit}\\
-		{\Huge %TODO 
-		[auch mehrzeilig möglich]}}
+		%{\Huge
+		%[auch mehrzeilig möglich]}
+		}
 		\vspace*{1.5cm}\\
-		{\Large %TODO
-		Abschluss-/Studienarbeit}\\
+		{\Large Bachelorarbeit}\\
 		{\Large von} \\
-		{\Large %TODO
-		Vorname Nachname}
+		{\Large Marius Wodtke}
 		\vspace*{3.5cm}\\
-		an der Fakultät für Wirtschaftswissenschaften
+		an der Fakultät für Informatik
 		\vspace*{0.5cm}\\
 		In dem Studiengang\\
-		%TODO
-		Name Studiengang
+		Informatik (B.Sc.)
 		\vspace*{1.5cm}\\
-		eingereicht am %TODO Datum
+		eingereicht am 01.01.01 %TODO Datum
 		beim\\
 		Institut für Angewandte Informatik\\
 		und Formale Beschreibungsverfahren\\
 		des Karlsruher Instituts für Technologie
 		\vspace*{2.5cm}\\
-		Referent: Prof. Dr. %TODO Referent
+		Referent: Prof. Dr. Hartmut Schmeck
 		\\
-		Betreuer: %TODO Betreuer
+		Betreuer: Kaibin Bao
 		\vspace*{1.5cm}\\
 		{\footnotesize KIT -- Universität des Landes Baden-Württemberg und}\\
 		{\footnotesize nationales Forschungszentrum in der Helmholtz-Gemeinschaft}\\
@@ -178,6 +179,8 @@ Ich versichere hiermit wahrheitsgemäß, die Arbeit und alle Teile daraus selbstän
 
  % % % % % % % % % % % % %INHALTE % % % % % % % % % % % % % %
  \include{einleitung}
+ 
+ \cite{laughman2003power}
 
  \include{kapitel1}
 

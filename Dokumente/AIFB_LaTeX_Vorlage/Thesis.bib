@@ -1,3 +1,4 @@
+\emergencystretch=1em
 @comment Kategorisierung Architekturmuster
 @book{buschmann,
   title={Pattern-orientierte Software-Architektur: ein Pattern-System},
@@ -7,3 +8,248 @@
   year={1998},
   publisher={Addison-Wesley}
 }
+
+
+
+
+@article{beckel2014revealing,
+  title={Revealing household characteristics from smart meter data},
+  author={Beckel, Christian and Sadamori, Leyna and Staake, Thorsten and Santini, Silvia},
+  journal={Energy},
+  volume={78},
+  pages={397--410},
+  year={2014},
+  publisher={Elsevier}
+}
+@comment{Trifft nicht 100%, klassifiziert Merkmale wie Anzahl Bewohner eines Hauses etc. 
+		Interessante Sachen zu Featureauswahl (S.14) und mindestens eine interessante Referenz zu einem Datamining Framework(S.30).
+		Verweis auf irische Studie mit 30-min Smart-Meter-Daten(S.3)}
+
+
+
+@inproceedings{bao2011user,
+  title={User behavior prediction for energy management in smart homes},
+  author={Bao, Kaibin and Allerding, Florian and Schmeck, Hartmut},
+  booktitle={Fuzzy Systems and Knowledge Discovery (FSKD), 2011 Eighth International Conference on},
+  volume={2},
+  pages={1335--1339},
+  year={2011},
+  organization={IEEE}
+}
+@comment{Wichtig für Kit Daten, Vorhersagen mit Markov Modellen und Day-Type-Modellen. 
+		Grafiken (S.1338) sind gut für Übersicht über den Datensatz.}
+
+
+
+@inproceedings{kolter2011redd,
+  title={REDD: A public data set for energy disaggregation research},
+  author={Kolter, J Zico and Johnson, Matthew J},
+  booktitle={Workshop on Data Mining Applications in Sustainability (SIGKDD), San Diego, CA},
+  volume={25},
+  pages={59--62},
+  year={2011},
+  organization={Citeseer}
+}
+@comment{Recht großer Datensatz, 1-sec disaggregiert aber leider nicht segmentiert.
+		Definition NILM (S.2) und Vorteile.}
+
+
+@inproceedings{anderson2012blued,
+  title={BLUED: A fully labeled public dataset for event-based non-intrusive load monitoring research},
+  author={Anderson, Kyle and Ocneanu, Adrian and Benitez, Diego and Carlson, Derrick and Rowe, Anthony and Berges, Mario},
+  booktitle={Proceedings of the 2nd KDD workshop on data mining applications in sustainability (SustKDD)},
+  pages={1--5},
+  year={2012}
+}
+@comment{Gelabelter Datensatz, leider nur aggregierte Daten, aber mit 12khz gesampled, FFT Analyse möglich}
+
+
+
+@inproceedings{beckel2014eco,
+  title={The eco data set and the performance of non-intrusive load monitoring algorithms},
+  author={Beckel, Christian and Kleiminger, Wilhelm and Cicchetti, Romano and Staake, Thorsten and Santini, Silvia},
+  booktitle={Proceedings of the 1st ACM Conference on Embedded Systems for Energy-Efficient Buildings},
+  pages={80--89},
+  year={2014},
+  organization={ACM}
+}
+@comment{Datensatz und Evaluation.
+		Vorteile von NILM (S.1), Features (S.2), Precision und Recall (S.4), Datensätze Übersicht (S.5)
+		Vorletzte Seite empfiehlt time of day als zusätzliches feature
+		Viele Paperverweise}
+
+
+
+@article{zeifman2011nonintrusive,
+  title={Nonintrusive appliance load monitoring: Review and outlook},
+  author={Zeifman, Michael and Roth, Kurt},
+  journal={IEEE Transactions on Consumer Electronics},
+  pages={76--84},
+  year={2011}
+}
+@comment{Zusammenfassung, viele Verweise
+		Vorteile NILM (S.76), Steps inklusive Features etc. (S.77) + Normaliesierung nach Hart + Hart zu Finite State Machines + Vorverarbeiten wie Filter, 
+		Nur Wirkleistung benutzen ist günstiger (S.78), Klassifizierung mit KNN + Features (S.80), Neue Features + Paper zur Verwendung mit NN (S.81),
+		Auf S.82 wird nochmals Wirk/Blindleistung + FFT features beworben }
+
+
+@article{liang2010load,
+  title={Load signature study—Part I: Basic concept, structure, and methodology},
+  author={Liang, Jian and Ng, Simon KK and Kendall, Gail and Cheng, John WM},
+  journal={Power Delivery, IEEE Transactions on},
+  volume={25},
+  number={2},
+  pages={551--560},
+  year={2010},
+  publisher={IEEE}
+}
+@comment{Neuronales Netz
+		Microlevel Features (S.553), verschiedene NN Typen (S.556)}
+
+
+@article{srinivasan2006neural,
+  title={Neural-network-based signature recognition for harmonic source identification},
+  author={Srinivasan, D and Ng, WS and Liew, AC},
+  journal={Power Delivery, IEEE Transactions on},
+  volume={21},
+  number={1},
+  pages={398--405},
+  year={2006},
+  publisher={IEEE}
+}
+@comment{NN mit FFT Features, Sehr genau mein Thema!
+		Multi Layer Perzeptron (S.400), In der Evaluation Addition der Feature}
+
+
+@article{hart1992nonintrusive,
+  title={Nonintrusive appliance load monitoring},
+  author={Hart, George William},
+  journal={Proceedings of the IEEE},
+  volume={80},
+  number={12},
+  pages={1870--1891},
+  year={1992},
+  publisher={IEEE}
+}
+@comment{Uralter Grundstein für NILM
+		WaMa ist FSM (S.1874), FSMs werden nicht modelliert (S.1875), Normalisierungsformel (S.1877), Störgrößen[transients] als Feature (S.1879), 
+		Spezielle Erkennung WaMa (S.1879), Übersicht über Algorithmus für State-of-the-Art (S.1882), Step-Erkennung (S.1883)}
+
+
+
+@article{bouloutas1991two,
+  title={Two extensions of the Viterbi algorithm},
+  author={Bouloutas, A and Hart, George W. and Schwartz, Mischa},
+  journal={Information Theory, IEEE Transactions on},
+  volume={37},
+  number={2},
+  pages={430--436},
+  year={1991},
+  publisher={IEEE}
+}
+@comment{Finite State Machines (WaMa), auch uniteressant, da ich einfach klassifiziere}
+
+
+@article{hart1993correcting,
+  title={Correcting dependent errors in sequences generated by finite-state processes},
+  author={Hart, George W and Bouloutas, Anastasios T},
+  journal={Information Theory, IEEE Transactions on},
+  volume={39},
+  number={4},
+  pages={1249--1260},
+  year={1993},
+  publisher={IEEE}
+}
+@comment{Finite State Machines (WaMa), es geht um Korrektur von Erkennungsfehlern durch Redundanz, wohl eher uninterressant}
+
+
+@article{de2011data,
+  title={A data mining framework for electricity consumption analysis from meter data},
+  author={De Silva, Daswin and Yu, Xinghuo and Alahakoon, Damminda and Holmes, Grahame},
+  journal={Industrial Informatics, IEEE Transactions on},
+  volume={7},
+  number={3},
+  pages={399--407},
+  year={2011},
+  publisher={IEEE}
+}
+@comment{Data Mining framework
+		Kann Vorhersagen machen etc, eher uninteressant}
+
+
+@article{laughman2003power,
+  title={Power signature analysis},
+  author={Laughman, Christopher and Lee, Kwangduk and Cox, Robert and Shaw, Steven and Leeb, Steven and Norford, Les and Armstrong, Peter},
+  journal={Power and Energy Magazine, IEEE},
+  volume={1},
+  number={2},
+  pages={56--63},
+  year={2003},
+  publisher={IEEE}
+}
+@comment{Harmonics, Auf 8khz Daten gesampled bis 7. Komponente
+		PQ-Plane (S.57), Negativbeispiele PQ (S.58), Harmonics (S.59)}
+
+
+@article{berges2011user,
+  title={User-centered nonintrusive electricity load monitoring for residential buildings},
+  author={Berges, Mario and Goldman, Ethan and Matthews, H Scott and Soibelman, Lucio and Anderson, Kyle},
+  journal={Journal of Computing in Civil Engineering},
+  volume={25},
+  number={6},
+  pages={471--480},
+  year={2011},
+  publisher={American Society of Civil Engineers}
+}
+@comment{Features real und reactiv power
+		Formel Harmonics (S.474), Evaluation mit viel zu wenig Events}
+
+
+@article{armel2013disaggregation,
+  title={Is disaggregation the holy grail of energy efficiency? The case of electricity},
+  author={Armel, K Carrie and Gupta, Abhay and Shrimali, Gireesh and Albert, Adrian},
+  journal={Energy Policy},
+  volume={52},
+  pages={213--234},
+  year={2013},
+  publisher={Elsevier}
+}
+@comment{Nilm Motivation
+		Bis zu 20 Prozent Einsparung (privat)(S.213), Graphik (S.215), NILM günstiger (S.218), Menschen sind sich des Verbrauchs bestimmter Geräte nicht bewusst (S.218)
+		Kosten vs. Nutzen (S.219), Real/reactive Power (S.220), Größere Frequenz = mehr Möglichkeiten + Genauigkeit (S.220), Hohe Frequenzen anfällig für Störungen (S.220)}
+
+
+@article{fischer2008feedback,
+  title={Feedback on household electricity consumption: a tool for saving energy?},
+  author={Fischer, Corinna},
+  journal={Energy efficiency},
+  volume={1},
+  number={1},
+  pages={79--104},
+  year={2008},
+  publisher={Springer}
+}
+@comment{NILM Motivation
+		Verbindung Nutzer zu Verbrauch schwer (S.80), Nutzer hat das Gefühl machtlos zu sein NILM hilft ihm bewusst zu machen, wie er sparen kann (S.82)
+		Einsparungspoetiale (S.87), Nicht jeder kann sparen (S.97)}
+
+
+@article{darby2006effectiveness,
+  title={The effectiveness of feedback on en \- ergy consumption},
+  author={Darby, Sarah},
+  journal={A Review for DEFRA of the Literature on Metering, Billing and direct Displays},
+  volume={486},
+  pages={2006},
+  year={2006}
+}
+@comment{Konkrete Einsparung 5-15 Prozent (S.17)}
+
+@article{vandenbergh2008individual,
+  title={Individual carbon emissions: The low-hanging fruit},
+  author={Vandenbergh, Michael P and Barkenbus, Jack and Gilligan, Jonathan M},
+  journal={UCLA Law Review},
+  volume={55},
+  pages={08--36},
+  year={2008}
+}
+@comment{40 Prozent des CO2 von Haushalten (S.3)}

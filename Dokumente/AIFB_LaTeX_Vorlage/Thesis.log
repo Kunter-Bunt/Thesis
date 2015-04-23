@@ -1,9 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.2)  26 OCT 2014 11:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.2)  23 APR 2015 12:58
 entering extended mode
-**Thesis.tex
-
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\T
-hesis.tex"
+**thesis
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\thesis.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -446,35 +444,53 @@ Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
 Package footmisc Info: Declaring symbol style lamport* on input line 903.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
-)
-\c@definition=\count121
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\microtype.sty"
+Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
+\MT@toks=\toks40
+\MT@count=\count121
+LaTeX Info: Redefining \textls on input line 766.
+\MT@outer@kern=\dimen154
+LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
+\MT@listname@count=\count122
 
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\T
-hesis.aux"
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\a
-cronyms.aux")
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\e
-inleitung.aux")
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\k
-apitel1.aux")
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\f
-azit.aux")
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\a
-nhang.aux"))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\microtype-pdftex.def"
+File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 915.
+LaTeX Info: Redefining \lslig on input line 915.
+\MT@outer@space=\skip64
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\microtype.cfg"
+File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
+))
+\c@definition=\count123
+
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\thesis.aux
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\acronyms.au
+x)
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\einleitung.
+aux)
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\kapitel1.au
+x)
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\fazit.aux)
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\anhang.aux)
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -512,76 +528,87 @@ LaTeX Font Info:    ... okay on input line 76.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count122
-\scratchdimen=\dimen154
+\scratchcounter=\count124
+\scratchdimen=\dimen155
 \scratchbox=\box34
-\nofMPsegments=\count123
-\nofMParguments=\count124
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count125
-\MPscratchDim=\dimen155
-\MPnumerator=\count126
-\makeMPintoPDFobject=\count127
-\everyMPtoPDFconversion=\toks41
+\nofMPsegments=\count125
+\nofMParguments=\count126
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count127
+\MPscratchDim=\dimen156
+\MPnumerator=\count128
+\makeMPintoPDFobject=\count129
+\everyMPtoPDFconversion=\toks42
 )
 \AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring OFF on input line 76.
+Package hyperref Info: Link coloring OFF on input line 79.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count128
+\c@section@level=\count130
 )
-LaTeX Info: Redefining \ref on input line 76.
-LaTeX Info: Redefining \pageref on input line 76.
-LaTeX Info: Redefining \nameref on input line 76.
+LaTeX Info: Redefining \ref on input line 79.
+LaTeX Info: Redefining \pageref on input line 79.
+LaTeX Info: Redefining \nameref on input line 79.
 
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\T
-hesis.out")
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\T
-hesis.out")
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\thesis.out)
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\thesis.out)
 \@outlinefile=\write4
-
 
 bibgerm.sty: (n)german.sty 2.5b detected
 
+LaTeX Info: Redefining \microtypecontext on input line 79.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\mt-cmr.cfg"
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
 <0_Logos/kit.jpg, id=43, 199.7061pt x 91.3011pt>
 File: 0_Logos/kit.jpg Graphic file (type jpg)
  <use 0_Logos/kit.jpg>
-Package pdftex.def Info: 0_Logos/kit.jpg used on input line 86.
+Package pdftex.def Info: 0_Logos/kit.jpg used on input line 89.
 (pdftex.def)             Requested size: 149.7792pt x 68.47565pt.
 
 <0_Logos/aifb.png, id=44, 738.76pt x 463.7325pt>
 File: 0_Logos/aifb.png Graphic file (type png)
  <use 0_Logos/aifb.png>
-Package pdftex.def Info: 0_Logos/aifb.png used on input line 92.
+Package pdftex.def Info: 0_Logos/aifb.png used on input line 95.
 (pdftex.def)             Requested size: 66.48552pt x 41.73412pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--133
+Underfull \hbox (badness 10000) in paragraph at lines 110--134
  
  []
 
 [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Tobias/Desktop/H
-iWi/Deckblatt Abschlussarbeiten/AIFB_LaTeX_Vorlage/0_Logos/kit.jpg> <C:/Users/T
-obias/Desktop/HiWi/Deckblatt Abschlussarbeiten/AIFB_LaTeX_Vorlage/0_Logos/aifb.
-png>] [2]pdfTeX warning (ext4): destination with the same identifier (name{page
-.1}) has been already used, duplicate ignored
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/mawo/Documents/G
+itHub/Thesis/Dokumente/AIFB_LaTeX_Vorlage/0_Logos/kit.jpg> <C:/Users/mawo/Docum
+ents/GitHub/Thesis/Dokumente/AIFB_LaTeX_Vorlage/0_Logos/aifb.png>] [2]pdfTeX wa
+rning (ext4): destination with the same identifier (name{page.1}) has been alre
+ady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.140 \cleardoublepage
+l.141 \cleardoublepage
                        [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
@@ -589,25 +616,31 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.156 \thispagestyle{empty}\cleardoublepage
+l.157 \thispagestyle{empty}\cleardoublepage
                                             [2
 
 ] [3
 
 ]
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\T
-hesis.toc"
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\thesis.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\mt-msa.cfg"
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg"
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ))
 \tf@toc=\write5
-\c@roemisch=\count129
+\c@roemisch=\count131
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -618,26 +651,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [3
 
 ]
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\a
-cronyms.tex") [4
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\acronyms.te
+x) [4
 
 ]
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\T
-hesis.lof")
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\thesis.lof)
 \tf@lof=\write6
- [5
+[5
 
 
 ]
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\T
-hesis.lot")
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\thesis.lot)
 \tf@lot=\write7
- [6
+[6
 
 ]
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\e
-inleitung.tex"pdfTeX warning (ext4): destination with the same identifier (name
-{page.1}) has been already used, duplicate ignored
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\einleitung.
+texpdfTeX warning (ext4): destination with the same identifier (name{page.1}) h
+as been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.18 
@@ -648,24 +679,25 @@ l.18
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.180  \include{einleitung}
-                            [2]
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\k
-apitel1.tex" <1_Grafiken/architekturen.PDF, id=120, 656.35454pt x 394.52313pt>
+l.181  \include{einleitung}
+                            [2]pdfTeX warning (ext4): destination with the same
+ identifier (name{page.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.185  \include{kapitel1}
+                          [3
+
+]
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\kapitel1.te
+x <1_Grafiken/architekturen.PDF, id=126, 656.35454pt x 394.52313pt>
 File: 1_Grafiken/architekturen.PDF Graphic file (type pdf)
 
 <use 1_Grafiken/architekturen.PDF>
 Package pdftex.def Info: 1_Grafiken/architekturen.PDF used on input line 21.
 (pdftex.def)             Requested size: 364.19667pt x 218.91476pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.25 \end{figure}
-                  [3
+ [4
 
-
-] [4pdfTeX warning (ext4): destination with the same identifier (name{figure.1}
+] [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -677,52 +709,49 @@ l.46
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.46 
-      <C:/Users/Tobias/Desktop/HiWi/Deckblatt Abschlussarbeiten/AIFB_LaTeX_Vorl
-age/1_Grafiken/architekturen.PDF>] [5]) [6]
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\f
-azit.tex") [7
+      <C:/Users/mawo/Documents/GitHub/Thesis/Dokumente/AIFB_LaTeX_Vorlage/1_Gra
+fiken/architekturen.PDF>] [6]) [7]
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\fazit.tex)
+[8
 
 
 ]
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\a
-nhang.tex") [8
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\anhang.tex)
+[9
 
 
 ]
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\T
-hesis.bbl")
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 193.
- [9
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\thesis.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 196.
+[10
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 193.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 196.
 
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\T
-hesis.aux"
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\a
-cronyms.aux")
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\e
-inleitung.aux")
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\k
-apitel1.aux")
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\f
-azit.aux")
-("C:\Users\Tobias\Desktop\HiWi\Deckblatt Abschlussarbeiten\AIFB_LaTeX_Vorlage\a
-nhang.aux"))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 193.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 193.
-Package rerunfilecheck Info: File `Thesis.out' has not changed.
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\thesis.aux
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\acronyms.au
+x)
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\einleitung.
+aux)
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\kapitel1.au
+x)
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\fazit.aux)
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\anhang.aux)
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 196.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 196.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: A6EE872AB618D46E258F2E4F720C2384;574.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 193.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 196.
  ) 
 Here is how much of TeX's memory you used:
- 8114 strings out of 493921
- 117512 string characters out of 3144873
- 214814 words of memory out of 3000000
- 11182 multiletter control sequences out of 15000+200000
- 13474 words of font info for 51 fonts, out of 3000000 for 9000
+ 9664 strings out of 493921
+ 144097 string characters out of 3144880
+ 276160 words of memory out of 3000000
+ 12646 multiletter control sequences out of 15000+200000
+ 15369 words of font info for 82 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,12n,43p,989b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,12n,43p,985b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -736,9 +765,9 @@ es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (
 x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Thesis.pdf (18 pages, 412463 bytes).
+Output written on thesis.pdf (19 pages, 419545 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 265 PDF objects out of 1000 (max. 8388607)
+ 36 named destinations out of 1000 (max. 500000)
+ 19552 words of extra memory for PDF output out of 20736 (max. 10000000)
 

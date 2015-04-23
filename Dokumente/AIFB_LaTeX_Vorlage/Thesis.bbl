@@ -1,8 +1,15 @@
-\begin{thebibliography}{Bus98}
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{LLC{\etalchar{+}}03}
 
 \bibitem[Bus98]{buschmann}
 {\sc Buschmann, F.}: {\em Pattern-orientierte Software-Architektur: ein
   Pattern-System}.
 \newblock Professionelle Softwareentwicklung. Addison-Wesley, 1998.
+
+\bibitem[LLC{\etalchar{+}}03]{laughman2003power}
+{\sc Laughman, Christopher}, {\sc Kwangduk Lee}, {\sc Robert Cox}, {\sc Steven
+  Shaw}, {\sc Steven Leeb}, {\sc Les Norford} \btxandlong{}\ {\sc Peter
+  Armstrong}: {\em Power signature analysis}.
+\newblock Power and Energy Magazine, IEEE, 1(2):56--63, 2003.
 
 \end{thebibliography}
