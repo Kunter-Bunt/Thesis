@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.2)  27 APR 2015 11:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.2)  27 APR 2015 11:52
 entering extended mode
 **Thesis.tex
 (C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\Thesis.tex
@@ -30,11 +30,11 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\german\german.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\german\ngerman.sty"
 v2.5e 1998-07-08
-Package: german 1998/07/08 v2.5e Support for writing german texts (br)
+Package: ngerman 1998/07/08 v2.5e Support for writing german texts (br)
 \grmnU@D=\dimen103
-german -- \language number for Austrian undefined, default 22 used.
+ngerman -- \language number for naustrian undefined, default 43 used.
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -307,14 +307,6 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box28
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
-Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks28
-\inpenc@posthook=\toks29
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin1.def"
-File: latin1.def 2008/03/30 v1.1d Input encoding file
-))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancybox\fancybox.sty"
 Package: fancybox 2010/05/15 1.4
 
@@ -322,10 +314,10 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \@fancybox=\box29
 \shadowsize=\dimen127
 \@Sbox=\box30
-\do@VerbBox=\toks30
-\the@fancyput=\toks31
-\this@fancyput=\toks32
-\EndVerbatimTokens=\toks33
+\do@VerbBox=\toks28
+\the@fancyput=\toks29
+\this@fancyput=\toks30
+\EndVerbatimTokens=\toks31
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read1
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
@@ -348,9 +340,9 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count113
-\float@exts=\toks34
+\float@exts=\toks32
 \float@box=\box31
-\@float@everytoks=\toks35
+\@float@everytoks=\toks33
 \@floatcapt=\box32
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\framed\framed.sty"
@@ -361,6 +353,14 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \FrameRule=\dimen130
 \FrameSep=\dimen131
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks34
+\inpenc@posthook=\toks35
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ansinew.def"
+File: ansinew.def 2008/03/30 v1.1d Input encoding file
+))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\germbib\bibgerm.sty"
 Package: bibgerm 2000/08/18 v0.1 Support for mixed language bibliographies
 
@@ -477,20 +477,20 @@ tung.aux)
 (C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\fazit.aux)
 (C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\anhang.aux)
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -541,7 +541,7 @@ LaTeX Font Info:    ... okay on input line 81.
 \everyMPtoPDFconversion=\toks42
 )
 \AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring OFF on input line 81.
+Package hyperref Info: Link coloring OFF on input line 82.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -550,9 +550,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count130
 )
-LaTeX Info: Redefining \ref on input line 81.
-LaTeX Info: Redefining \pageref on input line 81.
-LaTeX Info: Redefining \nameref on input line 81.
+LaTeX Info: Redefining \ref on input line 82.
+LaTeX Info: Redefining \pageref on input line 82.
+LaTeX Info: Redefining \nameref on input line 82.
 
 (C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\Thesis.out)
 (C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\Thesis.out)
@@ -560,7 +560,7 @@ LaTeX Info: Redefining \nameref on input line 81.
 
 bibgerm.sty: (n)german.sty 2.5b detected
 
-LaTeX Info: Redefining \microtypecontext on input line 81.
+LaTeX Info: Redefining \microtypecontext on input line 82.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -577,16 +577,16 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 <0_Logos/kit.jpg, id=35, 199.7061pt x 91.3011pt>
 File: 0_Logos/kit.jpg Graphic file (type jpg)
  <use 0_Logos/kit.jpg>
-Package pdftex.def Info: 0_Logos/kit.jpg used on input line 91.
+Package pdftex.def Info: 0_Logos/kit.jpg used on input line 92.
 (pdftex.def)             Requested size: 149.7792pt x 68.47565pt.
 
 <0_Logos/aifb.png, id=36, 738.76pt x 463.7325pt>
 File: 0_Logos/aifb.png Graphic file (type png)
  <use 0_Logos/aifb.png>
-Package pdftex.def Info: 0_Logos/aifb.png used on input line 97.
+Package pdftex.def Info: 0_Logos/aifb.png used on input line 98.
 (pdftex.def)             Requested size: 66.48552pt x 41.73412pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--136
+Underfull \hbox (badness 10000) in paragraph at lines 113--137
  
  []
 
@@ -599,16 +599,16 @@ rning (ext4): destination with the same identifier (name{page.1}) has been alre
 ady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.143 \cleardoublepage
+l.144 \cleardoublepage
                        [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
@@ -616,7 +616,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.159 \thispagestyle{empty}\cleardoublepage
+l.160 \thispagestyle{empty}\cleardoublepage
                                             [2
 
 ] [3
@@ -667,46 +667,58 @@ x) [4
 
 ]
 (C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\einleitung.
-tex)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) 
-has been already used, duplicate ignored
+tex)
+Underfull \hbox (badness 10000) in paragraph at lines 20--184
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.183  \include{einleitung}
+l.184  \include{einleitung}
                             [1
 
 
-]
+]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.184  \include{einleitung}
+                            [2]
 (C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\Vorverarbei
-tung.tex)pdfTeX warning (ext4): destination with the same identifier (name{page
-.2}) has been already used, duplicate ignored
+tung.tex
+ngerman: "mm is now obsolete, please use mmm instead on input line 16.
+ngerman: "FF is now obsolete, please use FFF instead on input line 16.
+ngerman: "MM is now obsolete, please use MMM instead on input line 19.
+ngerman: "FF is now obsolete, please use FFF instead on input line 19.
+ngerman: "mm is now obsolete, please use mmm instead on input line 21.
+ngerman: "FF is now obsolete, please use FFF instead on input line 21.
+)pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.185  \include{Vorverarbeitung}
-                                 [2
+l.186  \include{Vorverarbeitung}
+                                 [3
 
 
 ]
-(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\fazit.tex)p
-dfTeX warning (ext4): destination with the same identifier (name{page.3}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.187  \include{fazit}
-                       [3
-
-
-]
-(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\anhang.tex)
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\fazit.tex)
 [4
 
 
 ]
-(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\Thesis.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 196.
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\anhang.tex)
 [5
 
+
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 196.
+(C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\Thesis.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
+[6
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
 
 (C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\Thesis.aux
 (C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\acronyms.au
@@ -718,20 +730,20 @@ tung.aux)
 (C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\fazit.aux)
 (C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\anhang.aux)
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 196.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 196.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 197.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E5F93298B3EFA7B7C50AA8BBB9F2F6F4;434.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 196.
+(rerunfilecheck)             Checksum: 4F1EA850FEA4E2C37AA8EB07F47517C4;435.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 197.
  ) 
 Here is how much of TeX's memory you used:
- 9671 strings out of 493921
- 143980 string characters out of 3144880
- 277223 words of memory out of 3000000
- 12614 multiletter control sequences out of 15000+200000
- 15308 words of font info for 98 fonts, out of 3000000 for 9000
+ 9669 strings out of 493921
+ 144030 string characters out of 3144880
+ 277379 words of memory out of 3000000
+ 12619 multiletter control sequences out of 15000+200000
+ 15112 words of font info for 94 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 40i,12n,43p,921b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,12n,43p,355b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/
@@ -744,9 +756,9 @@ es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files
 )/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Thesis.pdf (14 pages, 259775 bytes).
+Output written on Thesis.pdf (15 pages, 259958 bytes).
 PDF statistics:
- 186 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
+ 190 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 500000)
  18507 words of extra memory for PDF output out of 20736 (max. 10000000)
 
