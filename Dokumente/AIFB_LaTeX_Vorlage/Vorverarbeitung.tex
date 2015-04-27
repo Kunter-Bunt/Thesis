@@ -1,0 +1,24 @@
+\section{Vorverarbeitung}
+\label{Vorverarbeitung}
+
+
+\subsection{State-of-the-Art}
+\label{State-of-the-Art}
+	Urspr"unglichstes Merkmal um die Zust"ande von Ger"aten zu unterscheiden ist die Wirkleistung.\\
+	Sie gibt die elektrische Leistung an, die von einem Ger"at in andere Leistungen (z.B. W"arme oder Bewegung) umgewandelt werden kann. \\ %TODO Verweis finden
+	Oft wird die Wirkleistung durch gr"obere Quantisierung oder Normalisierung gegl"attet, \cite{hart1992nonintrusive} verwendet hierzu folgende 		Formel:\\ 
+	$P_{norm} (t) = (\frac{Nennspannung}{V(t)})^2*P(t)$ mit P := Wirkleistung in Watt und V := Spannung in Volt, die Nennspannung beträgt in Europa 230 Volt.\\
+	Die Normalisierung bietet den Vorteil, dass sie nicht verlustbehaftet ist und wird deshalb h"aufig verwendet, wenn die Spannung gemessen wurde.\\
+	Mit der Wirkleistung allein ist man jedoch nicht in der Lage Ger"ate mit sehr "ahnlichem Verbrauch zu unterscheiden, ein Beispiel w"aren hier ein 2kW Motor und ein 2kW Heizelement.\\
+	 Diese lassen sich mit Hilfe der Blindleistung, welche nicht in andere Leistungen umgewandelt wird, unterscheiden, weil der Motor als induktiver Verbraucher mehr Blindleistung als das Heizelement aus dem Stromnetz zieht. \\ %TODO Grafik Hart und WaMa KIT
+	 Nachteil hier ist jedoch, dass die Blindleistung (und auch die Spannung) extra gemessen werden muss, die Ber"ucksichtigung dieses Features kostet also Geld \cite{zeifman2011nonintrusive}.
+	 Vergleicht man jedoch eine 60W Gl"uhbirne und einen Laptop mit einem 60W Netzteil, dann stellt man fest, dass diese sich auch unter Hinzunahme der Blindleistung kaum unterscheiden lassen \cite{laughman2003power}. \\
+	 Hier hilft die Betrachtung von "micro level" Features. \\
+	 Hier werden Wellenformen und die harmonischen Komponenten des Frequenzspektrums verwendet um Verbraucher zu unterscheiden, \cite{laughman2003power} zeigt hier z.B., dass sich Glühbirne und Netzteil in der 3. harmonischen Komponente deutlich unterscheiden.
+	 Zus"atzlich ver"andern viele Ger"ate die Wellenform des Stroms, so dass hier weiteres Potential für die Unterscheidung verschiedener Ger"ate vorliegt \cite{liang2010load}. \\ %TODO evtl Grafik Spektrum/Wellenform
+	 "Micro level" Features bieten sehr gute Unterscheidungsm"oglichkeiten, ben"otigen aber auch ein sehr hochfrequent aufgel"ostes Signal, "ublich sind mehrere kHz, \cite{anderson2012blued} bietet hierzu einen Datensatz mit 12kHz Aufl"osung. \\
+	 Messger"ate für eine solche Aufl"osung sind wesentlich teurer als die h"aufig f"ur Wirk- und Blindleistung verwendeten Ger"ate mit einer Aufl"osung von 1Hz und sind im Gegensatz zu Letzteren oft nicht in normalen Haushalten mit Smartmeter vorhanden \cite{zeifman2011nonintrusive}. \\ 
+	 Daher w"are es w"unschenswert mit den "macro level" Features mit einer Aufl"osung von 1Hz auszukommen.
+	 
+	 
+	
