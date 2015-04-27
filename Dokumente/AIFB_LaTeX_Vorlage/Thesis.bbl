@@ -1,15 +1,32 @@
-\newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{LLC{\etalchar{+}}03}
+\begin{thebibliography}{AGSA13}
+
+\bibitem[AGSA13]{armel2013disaggregation}
+{\sc Armel, K~Carrie}, {\sc Abhay Gupta}, {\sc Gireesh Shrimali} \btxandlong{}\
+  {\sc Adrian Albert}: {\em Is disaggregation the holy grail of energy
+  efficiency? The case of electricity}.
+\newblock Energy Policy, 52:213--234, 2013.
 
 \bibitem[Bus98]{buschmann}
 {\sc Buschmann, F.}: {\em Pattern-orientierte Software-Architektur: ein
   Pattern-System}.
 \newblock Professionelle Softwareentwicklung. Addison-Wesley, 1998.
 
-\bibitem[LLC{\etalchar{+}}03]{laughman2003power}
-{\sc Laughman, Christopher}, {\sc Kwangduk Lee}, {\sc Robert Cox}, {\sc Steven
-  Shaw}, {\sc Steven Leeb}, {\sc Les Norford} \btxandlong{}\ {\sc Peter
-  Armstrong}: {\em Power signature analysis}.
-\newblock Power and Energy Magazine, IEEE, 1(2):56--63, 2003.
+\bibitem[Fis08]{fischer2008feedback}
+{\sc Fischer, Corinna}: {\em Feedback on household electricity consumption: a
+  tool for saving energy?}
+\newblock Energy efficiency, 1(1):79--104, 2008.
+
+\bibitem[KJ11]{kolter2011redd}
+{\sc Kolter, J~Zico} \btxandlong{}\ {\sc Matthew~J Johnson}: {\em REDD: A
+  public data set for energy disaggregation research}.
+\newblock \Btxinlong{}\ {\em Workshop on Data Mining Applications in
+  Sustainability (SIGKDD), San Diego, CA}, \btxvolumelong{}~25,
+  \btxpageslong{}\ 59--62. Citeseer, 2011.
+
+\bibitem[VBG08]{vandenbergh2008individual}
+{\sc Vandenbergh, Michael~P}, {\sc Jack Barkenbus} \btxandlong{}\ {\sc
+  Jonathan~M Gilligan}: {\em Individual carbon emissions: The low-hanging
+  fruit}.
+\newblock UCLA Law Review, 55:08--36, 2008.
 
 \end{thebibliography}
