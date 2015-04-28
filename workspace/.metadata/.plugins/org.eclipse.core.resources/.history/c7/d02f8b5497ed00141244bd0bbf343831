@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+
+/**
+ * @author mawo
+ *
+ */
+public class DBConnect {
+	public DBConnect(){
+		super();
+	}
+
+}

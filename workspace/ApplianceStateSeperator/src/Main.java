@@ -1,3 +1,7 @@
+import java.io.*;
+import java.sql.*;
+
+
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
@@ -22,9 +26,8 @@ public class Main {
 		shell.setText("Super geiles Fenster!");
 		shell.open();
 		while (!shell.isDisposed()) {
-		if (!display.readAndDispatch()) display.sleep();
+			if (!display.readAndDispatch()) display.sleep();
 		}
 		display.dispose();
 	}
-
 }
