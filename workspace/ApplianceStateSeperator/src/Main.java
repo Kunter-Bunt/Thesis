@@ -20,7 +20,13 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		DBConnect db = new DBConnect();
+		db.loadDriver();
+		db.connect();
+		db.getSQL();
 
+		/*
 		Display display = new Display();
 		Shell shell = new Shell(display);
 		shell.setText("Super geiles Fenster!");
@@ -29,5 +35,7 @@ public class Main {
 			if (!display.readAndDispatch()) display.sleep();
 		}
 		display.dispose();
+		*/
+		System.out.println("Finished!");
 	}
 }
