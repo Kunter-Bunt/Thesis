@@ -13,27 +13,32 @@ import java.sql.ResultSet;
  *
  */
 public class DBConnect {
-	public DBConnect() {
-		super();
-	}
-	
+	private String url;
+	Statement stmt = null;
+	ResultSet rs = null;
 	Connection conn = null;
 	
-	public void loadDriver() {
+	public DBConnect(String DatenbankUrl) {
+		url = DatenbankUrl;
+		loadDriver();
+		connect();
+	}
+	
+
+	
+	private void loadDriver() {
 		 try {
 	            Class.forName("com.mysql.jdbc.Driver").newInstance();
-			    System.out.println("Loaded Driver");
+			    System.out.println("Successfully loaded Driver");
 	        } catch (Exception ex) {
 	            System.out.println("Failed to load JDBC");
 	        }
 	}
 	
-	public void connect() {
+	private void connect() {
 		try {
-		    conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdatenbank?" +
-		                                   "user=root");
+		    conn = DriverManager.getConnection(url);
 		    System.out.println("Connected");
-		    // Do something with the Connection
 		} catch (SQLException ex) {
 		    System.out.println("SQLException: " + ex.getMessage());
 		    System.out.println("SQLState: " + ex.getSQLState());
@@ -41,54 +46,36 @@ public class DBConnect {
 		}
 	}
 	
-	public void getSQL() {
-		
-		Statement stmt = null;
-		ResultSet rs = null;
+	public ResultSet getSQL(String statement) {
 		
 		try {
-		    stmt = conn.createStatement();
-		    rs = stmt.executeQuery("SELECT * FROM waschmaschine");
-		
-		    // or alternatively, if you don't know ahead of time that
-		    // the query will be a SELECT...
-		
-		    if (stmt.execute("SELECT * FROM waschmaschine")) {
-		        rs = stmt.getResultSet();
-		    }
-		
-		    rs.first();
-		    System.out.println(rs.getString("Wirkleistung"));
-		    // Now do something with the ResultSet ....
+			stmt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+			rs = stmt.executeQuery(statement);
+		    return rs;
 		}
 		catch (SQLException ex){
-		    // handle any errors
 		    System.out.println("SQLException: " + ex.getMessage());
 		    System.out.println("SQLState: " + ex.getSQLState());
 		    System.out.println("VendorError: " + ex.getErrorCode());
-		}
-		finally {
-		    // it is a good idea to release
-		    // resources in a finally{} block
-		    // in reverse-order of their creation
-		    // if they are no-longer needed
-		
-		    if (rs != null) {
-		        try {
-		            rs.close();
-		        } catch (SQLException sqlEx) { } // ignore
-		
-		        rs = null;
-		    }
-		
-		    if (stmt != null) {
-		        try {
-		            stmt.close();
-		        } catch (SQLException sqlEx) { } // ignore
-		
-		        stmt = null;
-		    }
+			return null;
 		}
 	}
-
+	
+	public void cleanSQL(){
+		if (rs != null) {
+	        try {
+	            rs.close();
+	        } catch (SQLException sqlEx) { }
+	
+	        rs = null;
+	    }
+	
+	    if (stmt != null) {
+	        try {
+	            stmt.close();
+	        } catch (SQLException sqlEx) { }
+	
+	        stmt = null;
+	    }
+	}
 }

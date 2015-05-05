@@ -1,0 +1,15 @@
+import java.sql.ResultSet;
+
+/**
+ * 
+ */
+
+/**
+ * @author mawo
+ *
+ */
+public class Wirkleistung extends Feature {
+	public Wirkleistung(ResultSet resultset) {
+		super(resultset);
+	}
+}

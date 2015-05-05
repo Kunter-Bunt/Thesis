@@ -1,0 +1,34 @@
+package Features;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+/**
+ * 
+ */
+
+/**
+ * @author mawo
+ *
+ */
+public class FolgeDurchschnitt extends Feature {
+	private int e;
+	
+	public FolgeDurchschnitt(ResultSet resultset, int epsilon) {
+		super(resultset);
+		e = epsilon;
+	}
+	
+	public double getValue(int Unixtime) throws SQLException {
+		rs.first();
+		while (!rs.isLast()) {
+			int now = rs.getInt("Unixtime");
+			rs.next();
+			int next = rs.getInt("Unixtime");
+			if (now <= Unixtime && next > Unixtime){
+				rs.previous();
+				return rs.getInt("Wirkleistung");
+			}
+		}
+		return 0;
+	}
+}

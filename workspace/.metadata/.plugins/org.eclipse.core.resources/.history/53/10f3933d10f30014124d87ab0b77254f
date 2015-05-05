@@ -1,0 +1,32 @@
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import Features.Feature;
+
+/**
+ * 
+ */
+
+/**
+ * @author mawo
+ *
+ */
+public class NormWirkleistung extends Feature {
+	public NormWirkleistung(ResultSet resultset) {
+		super(resultset);
+	}
+	
+	public double getValue(int Unixtime) throws SQLException {
+		rs.first();
+		while (!rs.isLast()) {
+			int now = rs.getInt("Unixtime");
+			rs.next();
+			int next = rs.getInt("Unixtime");
+			if (now <= Unixtime && next > Unixtime){
+				rs.previous();
+				return rs.getInt("NormWirkleistung");
+			}
+		}
+		return 0;
+	}
+}

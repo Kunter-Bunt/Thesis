@@ -1,0 +1,17 @@
+import java.sql.ResultSet;
+
+/**
+ * 
+ */
+
+/**
+ * @author mawo
+ *
+ */
+public abstract class Feature {
+	ResultSet rs;
+	
+	public Feature(ResultSet resultset) {
+		rs = resultset;
+	}
+}
