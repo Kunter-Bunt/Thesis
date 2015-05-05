@@ -1,0 +1,32 @@
+/**
+ * 
+ */
+package Vectors;
+
+import java.util.ArrayList;
+
+/**
+ * @author mawo
+ *
+ */
+public class Zeitreihe implements FeatureVector {
+
+	/* (non-Javadoc)
+	 * @see Vectors.FeatureVector#getFeatureVector(int)
+	 */
+	@Override
+	public ArrayList getFeatureVector(int t) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/* (non-Javadoc)
+	 * @see Vectors.FeatureVector#listFeatures()
+	 */
+	@Override
+	public ArrayList listFeatures() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

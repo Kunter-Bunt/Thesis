@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package Vectors;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+/**
+ * @author mawo
+ *
+ */
+public interface FeatureVector {
+	
+	public ArrayList getFeatureVector(int t) throws SQLException;
+	
+	public ArrayList listFeatures();
+	
+
+}

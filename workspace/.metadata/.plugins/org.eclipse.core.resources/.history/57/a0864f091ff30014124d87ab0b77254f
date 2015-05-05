@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package Vectors;
+
+/**
+ * @author mawo
+ *
+ */
+public interface FeatureVector {
+
+}

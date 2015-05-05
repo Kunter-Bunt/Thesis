@@ -37,20 +37,18 @@ public class Main {
 			*/
 			//sonstige Aktionen
 			int t = 1314228360;
-			System.out.println("");
-			System.out.print("Zeitreihe: ");
+			Wirkleistung wirk = new Wirkleistung(result, false);
+			System.out.println(wirk.getValue(t));
+			FolgeDurchschnitt mean = new FolgeDurchschnitt(result, false, 10);
+			System.out.println(mean.getValue(t));
+			MaxWirkleistung max = new MaxWirkleistung(result, false, 10);
+			System.out.println(max.getValue(t));
+			MinPeakWirkleistung minpeak = new MinPeakWirkleistung(result, false, 50);
+			System.out.println(minpeak.getValue(t));
+			System.out.println("Zeitreihe");
 			Zeitreihe zeitreihe = new Zeitreihe(result, false);
 			ArrayList<Double> z = zeitreihe.getFeatureVector(t);
 			for (double wert: z) System.out.print(wert + " ");
-			System.out.println("");
-			System.out.println("");
-			
-			System.out.print("Experte: ");
-			Experte experte = new Experte(result, false, 10, 10, 50);
-			ArrayList<Double> e = experte.getFeatureVector(t);
-			for (double wert: e) System.out.print(wert + " ");
-			System.out.println("");
-			System.out.println("");
 			
 		} catch (SQLException e) {System.out.println("Fehler");}
 		finally {

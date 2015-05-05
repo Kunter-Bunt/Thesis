@@ -3,4 +3,9 @@
 <fullyQualifiedTypeName name="org.eclipse.swt.widgets.Shell"/>
 <fullyQualifiedTypeName name="org.eclipse.swt.widgets.Display"/>
 <fullyQualifiedTypeName name="java.beans.Statement"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="Features.FolgeDurchschnitt"/>
+<fullyQualifiedTypeName name="Features.MaxWirkleistung"/>
+<fullyQualifiedTypeName name="Features.MinPeakWirkleistung"/>
 </qualifiedTypeNameHistroy>

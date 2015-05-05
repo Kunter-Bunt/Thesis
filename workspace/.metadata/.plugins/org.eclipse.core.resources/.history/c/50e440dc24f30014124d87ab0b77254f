@@ -37,7 +37,7 @@ public class Main {
 			*/
 			//sonstige Aktionen
 			int t = 1314228360;
-			System.out.println("");
+			
 			System.out.print("Zeitreihe: ");
 			Zeitreihe zeitreihe = new Zeitreihe(result, false);
 			ArrayList<Double> z = zeitreihe.getFeatureVector(t);
@@ -49,7 +49,6 @@ public class Main {
 			Experte experte = new Experte(result, false, 10, 10, 50);
 			ArrayList<Double> e = experte.getFeatureVector(t);
 			for (double wert: e) System.out.print(wert + " ");
-			System.out.println("");
 			System.out.println("");
 			
 		} catch (SQLException e) {System.out.println("Fehler");}
