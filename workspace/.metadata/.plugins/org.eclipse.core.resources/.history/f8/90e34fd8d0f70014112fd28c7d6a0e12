@@ -54,7 +54,7 @@ public class Main {
 			
 			Expander ex = new Expander(db);
 			//expand profil0
-			ex.expand("SELECT * FROM `profil8` ORDER BY `Unixtime`", "INSERT INTO profil8training (`Unixtime`,`Reltime`,`Spannung`,`Stromstärke`,`Wirkleistung`, `Klasse`)", 1384066710, 5550);
+			ex.expand("SELECT * FROM `profil1` ORDER BY `Unixtime`", "INSERT INTO profil1training (`Unixtime`,`Reltime`,`Spannung`,`Stromstärke`,`Wirkleistung`, `Klasse`)", 1382363246, 6222);
 			
 		} catch (SQLException e) {System.out.println("Fehler");}
 		finally {

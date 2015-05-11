@@ -25,7 +25,7 @@ public class Main {
 		DBConnect db = new DBConnect("jdbc:mysql://localhost:3306/testdatenbank?" +
                 "user=root");
 		
-		ResultSet result = db.getSQL("SELECT * FROM `profil0` ORDER BY `Unixtime`");
+		ResultSet result = db.getSQL("SELECT * FROM `waschmaschine` ORDER BY `Unixtime`");
 		
 		try {
 			
@@ -36,7 +36,7 @@ public class Main {
 			System.out.println(result.getString("Wirkleistung"));
 			*/
 			//sonstige Aktionen
-			int t = 1382295291;
+			int t = 1314228360;
 			System.out.println("");
 			System.out.print("Zeitreihe: ");
 			Zeitreihe zeitreihe = new Zeitreihe(result, false);
@@ -51,10 +51,6 @@ public class Main {
 			for (double wert: e) System.out.print(wert + " ");
 			System.out.println("");
 			System.out.println("");
-			
-			Expander ex = new Expander(db);
-			//expand profil0
-			ex.expand("SELECT * FROM `profil8` ORDER BY `Unixtime`", "INSERT INTO profil8training (`Unixtime`,`Reltime`,`Spannung`,`Stromstärke`,`Wirkleistung`, `Klasse`)", 1384066710, 5550);
 			
 		} catch (SQLException e) {System.out.println("Fehler");}
 		finally {

@@ -52,10 +52,6 @@ public class Main {
 			System.out.println("");
 			System.out.println("");
 			
-			Expander ex = new Expander(db);
-			//expand profil0
-			ex.expand("SELECT * FROM `profil8` ORDER BY `Unixtime`", "INSERT INTO profil8training (`Unixtime`,`Reltime`,`Spannung`,`Stromstärke`,`Wirkleistung`, `Klasse`)", 1384066710, 5550);
-			
 		} catch (SQLException e) {System.out.println("Fehler");}
 		finally {
 			db.cleanSQL();
