@@ -65,7 +65,7 @@ public class Main {
 					+ "`Wirkleistung t+10`, `Klasse`)", 1382290611, 1384072259);
 			
 			
-		} catch (SQLException e) {System.out.println(e);}
+		} catch (SQLException e) {System.out.println("Fehler");}
 		finally {
 			db.cleanSQL();
 		}

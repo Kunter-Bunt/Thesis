@@ -8,4 +8,6 @@
 <fullyQualifiedTypeName name="Features.FolgeDurchschnitt"/>
 <fullyQualifiedTypeName name="Features.MaxWirkleistung"/>
 <fullyQualifiedTypeName name="Features.MinPeakWirkleistung"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="Vectors.Zeitreihe"/>
 </qualifiedTypeNameHistroy>

@@ -25,7 +25,7 @@ public class Main {
 		DBConnect db = new DBConnect("jdbc:mysql://localhost:3306/testdatenbank?" +
                 "user=root");
 		
-		ResultSet result = db.getSQL("SELECT * FROM `training` ORDER BY `Unixtime`");
+		ResultSet result = db.getSQL("SELECT * FROM `profil0` ORDER BY `Unixtime`");
 		
 		try {
 			
@@ -36,7 +36,7 @@ public class Main {
 			System.out.println(result.getString("Wirkleistung"));
 			*/
 			//sonstige Aktionen
-			/*int t = 1382295291;
+			int t = 1382295291;
 			System.out.println("");
 			System.out.print("Zeitreihe: ");
 			Zeitreihe zeitreihe = new Zeitreihe(result, false);
@@ -51,21 +51,20 @@ public class Main {
 			for (double wert: e) System.out.print(wert + " ");
 			System.out.println("");
 			System.out.println("");
-			*/
 			
 			//Expander ex = new Expander(db);
 			//expand profil0
 			//ex.expand("SELECT * FROM `profil8` ORDER BY `Unixtime`", "INSERT INTO profil8training (`Unixtime`,`Reltime`,`Spannung`,`Stromstärke`,`Wirkleistung`, `Klasse`)", 1384066710, 5550);
-			FeatureWriter fw = new FeatureWriter(db, false);
+			FeatureWriter fw = new FeatureWriter(db);
 			fw.zeitreihe("SELECT * FROM `training` ORDER BY `Unixtime`", "INSERT INTO `trainingzeit` (`Unixtime`, "
 					+ "`Wirkleistung t-10`, `Wirkleistung t-9`, `Wirkleistung t-8`, `Wirkleistung t-7`, `Wirkleistung t-6`, "
 					+ "`Wirkleistung t-5`, `Wirkleistung t-4`, `Wirkleistung t-3`, `Wirkleistung t-2`, `Wirkleistung t-1`, "
 					+ "`Wirkleistung t+0`, `Wirkleistung t+1`, `Wirkleistung t+2`, `Wirkleistung t+3`, `Wirkleistung t+4`, "
 					+ "`Wirkleistung t+5`, `Wirkleistung t+6`, `Wirkleistung t+7`, `Wirkleistung t+8`, `Wirkleistung t+9`, "
-					+ "`Wirkleistung t+10`, `Klasse`)", 1382290611, 1384072259);
+					+ "`Wirkleistung t+10`, `Klasse`)", false);
 			
 			
-		} catch (SQLException e) {System.out.println(e);}
+		} catch (SQLException e) {System.out.println("Fehler");}
 		finally {
 			db.cleanSQL();
 		}

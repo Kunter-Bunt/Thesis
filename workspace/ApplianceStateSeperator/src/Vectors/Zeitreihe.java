@@ -23,7 +23,7 @@ public class Zeitreihe implements FeatureVector {
 		rs = resultset;
 		wirk = new Wirkleistung(resultset, normalisiert);
 		names = new ArrayList<String>();
-		for (int i = -10; i < 0; i++) names.add("Wirkleistung t-" + i);
+		for (int i = 10; i > 0; i--) names.add("Wirkleistung t-" + i);
 		for (int i = 0; i <= 10; i++) names. add("Wirkleistung t+" + i);
 	}
 

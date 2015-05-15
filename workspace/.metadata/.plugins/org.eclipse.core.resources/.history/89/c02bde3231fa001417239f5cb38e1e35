@@ -1,0 +1,40 @@
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import Vectors.Zeitreihe;
+
+/**
+ * 
+ */
+
+/**
+ * @author mawo
+ *
+ */
+public class FeatureWriter {
+	DBConnect db;
+	
+	public FeatureWriter (DBConnect database) {
+		db = database;
+	}
+	
+	public void zeitreihe (String input, String output, boolean normalisiert) throws SQLException{
+		ResultSet rs = db.getSQL(input);
+		String values;
+		rs.first();
+		Zeitreihe zr = new Zeitreihe(rs, normalisiert);
+		ArrayList<String> names = zr.listFeatures();
+		while (!rs.isLast()) {
+			ArrayList<Double> features = zr.getFeatureVector(rs.getInt("Unixtime"));
+			values = " VALUES (" + rs.getInt("Unixtime") + ", ";
+			for (Double w : features) {
+				values += w + ", ";
+			}
+			values += rs.getInt("Klasse") + ")";
+			db.setSQL(output + values);
+			rs.next();
+		}
+	}
+
+}

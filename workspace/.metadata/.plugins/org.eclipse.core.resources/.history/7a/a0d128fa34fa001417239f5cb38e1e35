@@ -62,10 +62,10 @@ public class Main {
 					+ "`Wirkleistung t-5`, `Wirkleistung t-4`, `Wirkleistung t-3`, `Wirkleistung t-2`, `Wirkleistung t-1`, "
 					+ "`Wirkleistung t+0`, `Wirkleistung t+1`, `Wirkleistung t+2`, `Wirkleistung t+3`, `Wirkleistung t+4`, "
 					+ "`Wirkleistung t+5`, `Wirkleistung t+6`, `Wirkleistung t+7`, `Wirkleistung t+8`, `Wirkleistung t+9`, "
-					+ "`Wirkleistung t+10`, `Klasse`)", 1382290611, 1384072259);
+					+ "`Wirkleistung t+10`, `Klasse`)");
 			
 			
-		} catch (SQLException e) {System.out.println(e);}
+		} catch (SQLException e) {System.out.println("Fehler");}
 		finally {
 			db.cleanSQL();
 		}
