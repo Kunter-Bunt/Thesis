@@ -1,0 +1,255 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     trainingzeit-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.NumericToNominal-Rlast-weka.filters.unsupervised.attribute.Remove-R1,21-weka.filters.unsupervised.attribute.Remove-R1,19-weka.filters.unsupervised.attribute.Remove-R1,17-weka.filters.unsupervised.attribute.Remove-R1,15-weka.filters.unsupervised.attribute.Remove-R1,13
+Instances:    30003
+Attributes:   12
+              Wirkleistung t-5
+              Wirkleistung t-4
+              Wirkleistung t-3
+              Wirkleistung t-2
+              Wirkleistung t-1
+              Wirkleistung t+0
+              Wirkleistung t+1
+              Wirkleistung t+2
+              Wirkleistung t+3
+              Wirkleistung t+4
+              Wirkleistung t+5
+              Klasse
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -17.768910224756798
+    Node 6    18.41005948672423
+    Node 7    -11.206120285659983
+    Node 8    -7.558981575225296
+    Node 9    -0.5102164362769648
+    Node 10    -9.466867011378158
+    Node 11    -1.1412712345405256
+    Node 12    23.559279172054822
+    Node 13    -7.904831227596313
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -23.763447392337092
+    Node 6    12.988501558948576
+    Node 7    0.3418936885062633
+    Node 8    6.84881310452112
+    Node 9    9.424047756358927
+    Node 10    8.95483279196544
+    Node 11    -3.8236253849715953
+    Node 12    0.1167215357108398
+    Node 13    4.077730184480292
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    3.0618491181074106
+    Node 6    -2.50139680415626
+    Node 7    -11.085832071902002
+    Node 8    -3.9670656073413797
+    Node 9    -1.8120814258073858
+    Node 10    1.1625714954526187
+    Node 11    -1.7675534675509574
+    Node 12    -2.3458102635873446
+    Node 13    3.5009062661836325
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -6.905400207224329
+    Node 6    -2.0573922929688333
+    Node 7    8.566742022473878
+    Node 8    -17.351623960753578
+    Node 9    -4.448201426390044
+    Node 10    -2.4866755426014695
+    Node 11    -0.656609065028846
+    Node 12    11.955255240492765
+    Node 13    4.236681940803948
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -4.360062881117604
+    Node 6    -7.034707641349326
+    Node 7    4.779864452611239
+    Node 8    -3.4726659662353234
+    Node 9    -4.190618620134874
+    Node 10    0.1301233838399791
+    Node 11    -3.2090244722783936
+    Node 12    4.0666530813406405
+    Node 13    -2.7384533275474365
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -6.052682733821238
+    Node 6    -12.427222813926237
+    Node 7    4.382867592322516
+    Node 8    11.188319863474092
+    Node 9    -6.816510452123527
+    Node 10    -0.322413240368245
+    Node 11    -4.391103994587876
+    Node 12    -17.103124723445728
+    Node 13    -16.856059519878777
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -38.639383488174886
+    Attrib Wirkleistung t-5    -1.3736356069114848
+    Attrib Wirkleistung t-4    -1.3041212139254807
+    Attrib Wirkleistung t-3    -2.375830338403259
+    Attrib Wirkleistung t-2    -1.5760114852731284
+    Attrib Wirkleistung t-1    -3.521370737400526
+    Attrib Wirkleistung t+0    -3.9249630644445532
+    Attrib Wirkleistung t+1    -21.974332215190724
+    Attrib Wirkleistung t+2    -7.847463682458428
+    Attrib Wirkleistung t+3    -2.596717028596281
+    Attrib Wirkleistung t+4    -1.5557787510236716
+    Attrib Wirkleistung t+5    -1.8984059590712472
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -2.908951797053627
+    Attrib Wirkleistung t-5    -2.272026731231869
+    Attrib Wirkleistung t-4    -1.7806584692245915
+    Attrib Wirkleistung t-3    -1.5640821178556656
+    Attrib Wirkleistung t-2    -1.6809983110325182
+    Attrib Wirkleistung t-1    -1.4565018740007654
+    Attrib Wirkleistung t+0    0.11527150168537303
+    Attrib Wirkleistung t+1    -5.407830094564755
+    Attrib Wirkleistung t+2    -1.1192366714070563
+    Attrib Wirkleistung t+3    -1.394165901042175
+    Attrib Wirkleistung t+4    -1.8609173517089352
+    Attrib Wirkleistung t+5    -1.7891669914422144
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -5.421262525253458
+    Attrib Wirkleistung t-5    12.57474199274129
+    Attrib Wirkleistung t-4    0.44171017981209343
+    Attrib Wirkleistung t-3    1.1803962862706532
+    Attrib Wirkleistung t-2    -1.2125359290218602
+    Attrib Wirkleistung t-1    -4.2443623547290175
+    Attrib Wirkleistung t+0    -4.338661914515996
+    Attrib Wirkleistung t+1    -22.091042921853113
+    Attrib Wirkleistung t+2    -4.114709305889547
+    Attrib Wirkleistung t+3    1.058804410475509
+    Attrib Wirkleistung t+4    2.9808310508649125
+    Attrib Wirkleistung t+5    3.060861296785797
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -2.9246782512843414
+    Attrib Wirkleistung t-5    2.5774958071947696
+    Attrib Wirkleistung t-4    2.4649878667321503
+    Attrib Wirkleistung t-3    0.7660228749680649
+    Attrib Wirkleistung t-2    0.9796893901989087
+    Attrib Wirkleistung t-1    -0.25466331460856256
+    Attrib Wirkleistung t+0    0.09859058092883494
+    Attrib Wirkleistung t+1    -13.289929937429095
+    Attrib Wirkleistung t+2    1.2578979677855924
+    Attrib Wirkleistung t+3    3.8304357916887573
+    Attrib Wirkleistung t+4    4.324615256732035
+    Attrib Wirkleistung t+5    -0.3866457369789616
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    463.1732198893867
+    Attrib Wirkleistung t-5    59.99880624580272
+    Attrib Wirkleistung t-4    39.13651888813496
+    Attrib Wirkleistung t-3    34.27414193757748
+    Attrib Wirkleistung t-2    40.02344309348407
+    Attrib Wirkleistung t-1    43.63443257637528
+    Attrib Wirkleistung t+0    50.72208849115563
+    Attrib Wirkleistung t+1    50.006496687804606
+    Attrib Wirkleistung t+2    42.36538361587812
+    Attrib Wirkleistung t+3    31.492481623082103
+    Attrib Wirkleistung t+4    29.606548675389384
+    Attrib Wirkleistung t+5    44.64710473857385
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -56.11281626741481
+    Attrib Wirkleistung t-5    -7.906143399535331
+    Attrib Wirkleistung t-4    -5.1878160156640245
+    Attrib Wirkleistung t-3    -4.357204390515659
+    Attrib Wirkleistung t-2    -4.806031389151163
+    Attrib Wirkleistung t-1    -5.2000767930192096
+    Attrib Wirkleistung t+0    -7.1228954387454575
+    Attrib Wirkleistung t+1    -6.9290682689376375
+    Attrib Wirkleistung t+2    -4.760289214058371
+    Attrib Wirkleistung t+3    -3.069447268097185
+    Attrib Wirkleistung t+4    -2.2328947491509417
+    Attrib Wirkleistung t+5    -4.12087399255086
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -29.89616597983156
+    Attrib Wirkleistung t-5    -8.817772684050135
+    Attrib Wirkleistung t-4    -3.9560028750724237
+    Attrib Wirkleistung t-3    -4.538925179284511
+    Attrib Wirkleistung t-2    -1.6936694387360967
+    Attrib Wirkleistung t-1    -1.6185384962365743
+    Attrib Wirkleistung t+0    -9.32306506538423
+    Attrib Wirkleistung t+1    -12.83626520072441
+    Attrib Wirkleistung t+2    2.2856032858721695
+    Attrib Wirkleistung t+3    1.7846782626638322
+    Attrib Wirkleistung t+4    5.91430536084104
+    Attrib Wirkleistung t+5    -2.1453500106951093
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    14.930228826588763
+    Attrib Wirkleistung t-5    1.107673120706946
+    Attrib Wirkleistung t-4    1.3333884256604946
+    Attrib Wirkleistung t-3    5.03732134859119
+    Attrib Wirkleistung t-2    0.9080197523784888
+    Attrib Wirkleistung t-1    2.4814526882962706
+    Attrib Wirkleistung t+0    14.668791188138966
+    Attrib Wirkleistung t+1    -2.986005432333865
+    Attrib Wirkleistung t+2    0.12264407983260453
+    Attrib Wirkleistung t+3    2.0864288511034026
+    Attrib Wirkleistung t+4    2.418776044325715
+    Attrib Wirkleistung t+5    3.370998878217849
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+Class 2
+    Input
+    Node 2
+Class 3
+    Input
+    Node 3
+Class 4
+    Input
+    Node 4
+Class 5
+    Input
+    Node 5
+
+
+Time taken to build model: 56.48 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       29249               97.4869 %
+Incorrectly Classified Instances       754                2.5131 %
+Kappa statistic                          0.9478
+Mean absolute error                      0.011 
+Root mean squared error                  0.0729
+Relative absolute error                  7.0304 %
+Root relative squared error             26.0452 %
+Total Number of Instances            30003     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.994     0.024      0.851     0.994     0.917      0.999    0
+                 0.969     0.004      0.998     0.969     0.984      0.999    1
+                 0.999     0          0.998     0.999     0.999      1        2
+                 0.351     0          0.606     0.351     0.444      0.924    3
+                 0.583     0.001      0.605     0.583     0.594      0.993    4
+                 0.967     0.001      0.944     0.967     0.955      0.999    5
+Weighted Avg.    0.975     0.006      0.978     0.975     0.975      0.999
+
+=== Confusion Matrix ===
+
+     a     b     c     d     e     f   <-- classified as
+  3669    23     0     0     0     0 |     a = 0
+   640 20345     0     1     0     0 |     b = 1
+     0     2  4760     2     0     0 |     c = 2
+     0     5     7    20    23     2 |     d = 3
+     0     2     1    10    49    22 |     e = 4
+     0     5     0     0     9   406 |     f = 5
+

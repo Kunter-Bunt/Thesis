@@ -1,0 +1,115 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     trainingzeit-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.NumericToNominal-Rlast-weka.filters.unsupervised.attribute.Remove-R1,21-weka.filters.unsupervised.attribute.Remove-R1,19-weka.filters.unsupervised.attribute.Remove-R1,17-weka.filters.unsupervised.attribute.Remove-R1,15-weka.filters.unsupervised.attribute.Remove-R1,13-weka.filters.unsupervised.attribute.Remove-R1,11-weka.filters.unsupervised.attribute.Remove-R1,9-weka.filters.unsupervised.attribute.Remove-R1,7-weka.filters.unsupervised.attribute.Remove-R1,5-weka.filters.unsupervised.attribute.Remove-R1,3
+Instances:    30003
+Attributes:   2
+              Wirkleistung t+0
+              Klasse
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -21.88814895039922
+    Node 6    11.471092448721013
+    Node 7    -9.800642575795347
+    Node 8    50.80597914952861
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -5.045742418358605
+    Node 6    20.825854688946087
+    Node 7    3.123365781653745
+    Node 8    -47.90773164894426
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    5.381739812076916
+    Node 6    -4.929664240945285
+    Node 7    -21.161942494549848
+    Node 8    -3.1363920591755106
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -5.025897026344669
+    Node 6    -8.260151412555116
+    Node 7    2.1714533491592007
+    Node 8    -1.4024729296538858
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -4.915085322644153
+    Node 6    -20.324703023145187
+    Node 7    3.3299863707191277
+    Node 8    -1.386751469017815
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -20.42324765758948
+    Node 6    -15.310368829529892
+    Node 7    22.100232477426484
+    Node 8    -5.738303778191319
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -31.506213767168166
+    Attrib Wirkleistung t+0    -38.634138113536224
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -1.0643015705388303
+    Attrib Wirkleistung t+0    -7.647578244200943
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -206.0952098003326
+    Attrib Wirkleistung t+0    -206.06873588876982
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+Class 2
+    Input
+    Node 2
+Class 3
+    Input
+    Node 3
+Class 4
+    Input
+    Node 4
+Class 5
+    Input
+    Node 5
+
+
+Time taken to build model: 22.86 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       29508               98.3502 %
+Incorrectly Classified Instances       495                1.6498 %
+Kappa statistic                          0.9644
+Mean absolute error                      0.0073
+Root mean squared error                  0.0597
+Relative absolute error                  4.6488 %
+Root relative squared error             21.3395 %
+Total Number of Instances            30003     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.999     0          0.999     0.999     0.999      1        0
+                 0.996     0.04       0.983     0.996     0.989      0.995    1
+                 0.996     0.001      0.996     0.996     0.996      0.998    2
+                 0         0          0         0         0          0.841    3
+                 0.048     0.001      0.2       0.048     0.077      0.884    4
+                 0.41      0.003      0.642     0.41      0.5        0.989    5
+Weighted Avg.    0.984     0.028      0.978     0.984     0.98       0.995
+
+=== Confusion Matrix ===
+
+     a     b     c     d     e     f   <-- classified as
+  3688     4     0     0     0     0 |     a = 0
+     5 20898    16     0    10    57 |     b = 1
+     0    18  4746     0     0     0 |     c = 2
+     0    37     5     0     6     9 |     d = 3
+     0    50     0     0     4    30 |     e = 4
+     0   248     0     0     0   172 |     f = 5
+

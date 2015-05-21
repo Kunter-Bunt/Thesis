@@ -57,14 +57,14 @@ public class Main {
 			//expand profil0
 			//ex.expand("SELECT * FROM `profil8` ORDER BY `Unixtime`", "INSERT INTO profil8training (`Unixtime`,`Reltime`,`Spannung`,`Stromstärke`,`Wirkleistung`, `Klasse`)", 1384066710, 5550);
 			FeatureWriter fw = new FeatureWriter(db, false);
-			fw.zeitreihe("SELECT * FROM `training` ORDER BY `Unixtime`", "INSERT INTO `trainingzeit` (`Unixtime`, "
+			/*fw.zeitreihe("SELECT * FROM `training` ORDER BY `Unixtime`", "INSERT INTO `trainingzeitnorm` (`Unixtime`, "
 					+ "`Wirkleistung t-10`, `Wirkleistung t-9`, `Wirkleistung t-8`, `Wirkleistung t-7`, `Wirkleistung t-6`, "
 					+ "`Wirkleistung t-5`, `Wirkleistung t-4`, `Wirkleistung t-3`, `Wirkleistung t-2`, `Wirkleistung t-1`, "
 					+ "`Wirkleistung t+0`, `Wirkleistung t+1`, `Wirkleistung t+2`, `Wirkleistung t+3`, `Wirkleistung t+4`, "
 					+ "`Wirkleistung t+5`, `Wirkleistung t+6`, `Wirkleistung t+7`, `Wirkleistung t+8`, `Wirkleistung t+9`, "
 					+ "`Wirkleistung t+10`, `Klasse`)", 1382290611, 1384072259);
-			
-			
+			*/
+			fw.experte("SELECT * FROM `training` ORDER BY `Unixtime`", "INSERT INTO `experte` (`Unixtime`, `Wirkleistung`, `FolgeDurchschnitt`, `MaxWirkleistung`, `MinPeakWirkleistung`,`Klasse`)", 1382290611, 1384072259);
 		} catch (SQLException e) {System.out.println(e);}
 		finally {
 			db.cleanSQL();

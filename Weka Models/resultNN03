@@ -1,0 +1,135 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     trainingzeit-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.NumericToNominal-Rlast-weka.filters.unsupervised.attribute.Remove-R1,21-weka.filters.unsupervised.attribute.Remove-R1,19-weka.filters.unsupervised.attribute.Remove-R1,17-weka.filters.unsupervised.attribute.Remove-R1,15-weka.filters.unsupervised.attribute.Remove-R1,13-weka.filters.unsupervised.attribute.Remove-R1,11-weka.filters.unsupervised.attribute.Remove-R1,9-weka.filters.unsupervised.attribute.Remove-R1,7-weka.filters.unsupervised.attribute.Remove-R1,5
+Instances:    30003
+Attributes:   4
+              Wirkleistung t-1
+              Wirkleistung t+0
+              Wirkleistung t+1
+              Klasse
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -27.731593397509027
+    Node 6    11.39317919066983
+    Node 7    17.355070964976356
+    Node 8    -14.529717164395196
+    Node 9    28.31216962399233
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -6.173914185135587
+    Node 6    18.704678687595045
+    Node 7    12.61671260296063
+    Node 8    -7.883285764481884
+    Node 9    -34.81759296193447
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    4.540890679079486
+    Node 6    -8.270318856187147
+    Node 7    -1.6273629436185368
+    Node 8    -35.206140499163325
+    Node 9    -2.7051628155684866
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -4.741334815123042
+    Node 6    -17.300906002725263
+    Node 7    2.5088823049884077
+    Node 8    1.8099221316579879
+    Node 9    -1.16974505646597
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -4.58895984363004
+    Node 6    -19.710633783770078
+    Node 7    1.9376150453740155
+    Node 8    3.2227430158629673
+    Node 9    -1.139604309750519
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -29.11148304558632
+    Node 6    -8.234709590146046
+    Node 7    -7.967644533200031
+    Node 8    35.888486371054995
+    Node 9    -3.9432708361390127
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -29.79211531683509
+    Attrib Wirkleistung t-1    -1.9566093551905621
+    Attrib Wirkleistung t+0    -0.1928780024718817
+    Attrib Wirkleistung t+1    -36.26569962172104
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -27.500750313385662
+    Attrib Wirkleistung t-1    -27.264853808548832
+    Attrib Wirkleistung t+0    -2.759019347597209
+    Attrib Wirkleistung t+1    -3.620303467130398
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -3.086135407463315
+    Attrib Wirkleistung t-1    -2.979978922195608
+    Attrib Wirkleistung t+0    -0.6850769831924246
+    Attrib Wirkleistung t+1    -4.687910442793165
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -290.7711814043808
+    Attrib Wirkleistung t-1    -102.42580576558784
+    Attrib Wirkleistung t+0    -87.28640260471444
+    Attrib Wirkleistung t+1    -98.7970224215033
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+Class 2
+    Input
+    Node 2
+Class 3
+    Input
+    Node 3
+Class 4
+    Input
+    Node 4
+Class 5
+    Input
+    Node 5
+
+
+Time taken to build model: 27.1 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       26526               88.4112 %
+Incorrectly Classified Instances      3477               11.5888 %
+Kappa statistic                          0.7151
+Mean absolute error                      0.0403
+Root mean squared error                  0.1951
+Relative absolute error                 25.7139 %
+Root relative squared error             69.7097 %
+Total Number of Instances            30003     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.1       0          1         0.1       0.182      0.977    0
+                 0.999     0.37       0.863     0.999     0.926      0.852    1
+                 1         0          0.997     1         0.999      1        2
+                 0.158     0.001      0.36      0.158     0.22       0.968    3
+                 0.31      0.002      0.333     0.31      0.321      0.996    4
+                 0.962     0.002      0.863     0.962     0.91       0.996    5
+Weighted Avg.    0.884     0.259      0.899     0.884     0.842      0.894
+
+=== Confusion Matrix ===
+
+     a     b     c     d     e     f   <-- classified as
+   369  3323     0     0     0     0 |     a = 0
+     0 20955     6     2     6    17 |     b = 1
+     0     0  4763     0     1     0 |     c = 2
+     0     3     6     9    36     3 |     d = 3
+     0     1     0    13    26    44 |     e = 4
+     0     6     0     1     9   404 |     f = 5
+

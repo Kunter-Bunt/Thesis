@@ -2,6 +2,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import Vectors.Experte;
 import Vectors.Zeitreihe;
 
 /**
@@ -15,10 +16,12 @@ import Vectors.Zeitreihe;
 public class FeatureWriter {
 	private DBConnect db;
 	private String name;
+	private boolean norm;
 	
 	public FeatureWriter (DBConnect database, boolean normalisiert) {
 		db = database;
-		if (normalisiert) name = "NormWirkleistung";
+		norm = normalisiert;
+		if (normalisiert) name = "Normwirkleistung";
 		else name = "Wirkleistung";
 	}
 	
@@ -74,6 +77,26 @@ public class FeatureWriter {
 			db.setSQL(output + values);
 			rs.next();
 		}*/
+	}
+	
+	
+	public void experte (String input, String output, int start, int end) throws SQLException{
+		ResultSet rs = db.getSQL(input);
+		String values;
+		rs.first();
+		Experte ex = new Experte(db.getSQL(input), norm, 3, 3, 400);
+		
+		while (rs.getInt("Unixtime") <= end-3) {
+			values = " VALUES (" + rs.getInt("Unixtime") + ", ";
+			ArrayList<Double> features = ex.getFeatureVector(rs.getInt("Unixtime"));
+			for(Double f : features) {
+				values += f + ", ";
+			}
+			values += rs.getInt("Klasse") + ")";
+			System.out.println(output+ values);
+			db.setSQL(output + values);
+			rs.next();
+		}
 	}
 
 }

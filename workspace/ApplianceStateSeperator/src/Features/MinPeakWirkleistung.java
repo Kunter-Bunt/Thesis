@@ -32,7 +32,7 @@ public class MinPeakWirkleistung extends Feature {
 			if (now <= Unixtime && next > Unixtime){
 				rs.previous();
 				double min = rs.getDouble(name);
-				while (rs.getDouble(name) < e) {
+				while (rs.getDouble(name) < e && !rs.isFirst()) {
 					if (min > rs.getDouble(name))
 						min = rs.getDouble(name);
 					rs.previous();
