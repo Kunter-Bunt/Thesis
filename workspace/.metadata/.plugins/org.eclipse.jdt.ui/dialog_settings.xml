@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="C:\Program Files\Weka-3-6" key="org.eclipse.jdt.ui.lastextjar"/>
 	<section name="FatJarPackageWizard">
 		<item value="C:\Users\mawo\Documents\GitHub\Thesis\workspace" key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION"/>
 		<item value="HelloWorldSWT - HelloWorldSWT" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
@@ -47,7 +48,7 @@
 		<item value="true" key="RunnableJar.export.ipwarning"/>
 	</section>
 	<section name="BuildPathsPropertyPage">
-		<item value="1" key="pageIndex"/>
+		<item value="2" key="pageIndex"/>
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>

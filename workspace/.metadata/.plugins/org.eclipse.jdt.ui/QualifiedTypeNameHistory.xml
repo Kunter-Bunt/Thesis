@@ -11,4 +11,5 @@
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="Vectors.Zeitreihe"/>
 <fullyQualifiedTypeName name="Vectors.Experte"/>
+<fullyQualifiedTypeName name="weka.filters.unsupervised.attribute.NumericToNominal"/>
 </qualifiedTypeNameHistroy>
