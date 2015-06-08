@@ -7,6 +7,6 @@
 \contentsline {subsection}{\numberline {2.2}Berechnete Daten}{3}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Die Waschmaschine}{4}{subsection.2.3}
 \contentsline {section}{\numberline {3}Vorverarbeitung}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}State-of-the-Art}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.1}Stand der Technik}{5}{subsection.3.1}
 \contentsline {section}{\numberline {4}Fazit}{6}{section.4}
 \contentsline {section}{\numberline {A}Anhang}{7}{appendix.A}
