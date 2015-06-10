@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.2)  8 JUN 2015 11:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.2)  8 JUN 2015 13:08
 entering extended mode
 **Thesis.tex
 (C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\Thesis.tex
@@ -683,12 +683,52 @@ s been already used, duplicate ignored
 l.184  \include{einleitung}
                             [2]
 (C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\Daten.tex
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
-
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\OT1/cmr/m/n/12 (+20) Con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--24
+Overfull \hbox (2.25362pt too wide) in paragraph at lines 22--22
+\OT1/cmr/m/n/12 (-20) troller| 
+ []
+
+
+Overfull \hbox (1.28995pt too wide) in paragraph at lines 22--22
+[]|\OT1/cmr/m/n/12 (-20) Meter| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\OT1/cmr/m/n/12 (+20) Span-
+ []
+
+
+Overfull \hbox (4.12967pt too wide) in paragraph at lines 22--22
+[]|\OT1/cmr/m/n/12 (-20) Strom-
+ []
+
+
+Overfull \hbox (1.67134pt too wide) in paragraph at lines 22--22
+\OT1/cmr/m/n/12 (-20) st[]arke| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\OT1/cmr/m/n/12 (+20) Wirk-
+ []
+
+
+Overfull \hbox (4.9434pt too wide) in paragraph at lines 22--22
+\OT1/cmr/m/n/12 (-20) leistung| 
+ []
+
+
+Overfull \hbox (31.57239pt too wide) in paragraph at lines 21--28
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--42
 
  []
 
@@ -696,7 +736,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.24 
+l.42 
       [3
 
 
@@ -746,11 +786,11 @@ Package rerunfilecheck Info: File `Thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 199.
  ) 
 Here is how much of TeX's memory you used:
- 9708 strings out of 493921
- 144811 string characters out of 3144880
- 278968 words of memory out of 3000000
+ 9704 strings out of 493921
+ 144781 string characters out of 3144880
+ 281968 words of memory out of 3000000
  12627 multiletter control sequences out of 15000+200000
- 15733 words of font info for 103 fonts, out of 3000000 for 9000
+ 15575 words of font info for 101 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  40i,12n,43p,874b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
@@ -766,7 +806,7 @@ les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Thesis.pdf (17 pages, 284640 bytes).
+Output written on Thesis.pdf (17 pages, 286178 bytes).
 PDF statistics:
  225 PDF objects out of 1000 (max. 8388607)
  39 named destinations out of 1000 (max. 500000)
