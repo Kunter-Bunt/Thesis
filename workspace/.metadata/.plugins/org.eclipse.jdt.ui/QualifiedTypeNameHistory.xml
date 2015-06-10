@@ -12,4 +12,16 @@
 <fullyQualifiedTypeName name="Vectors.Zeitreihe"/>
 <fullyQualifiedTypeName name="Vectors.Experte"/>
 <fullyQualifiedTypeName name="weka.filters.unsupervised.attribute.NumericToNominal"/>
+<fullyQualifiedTypeName name="javax.swing.JButton"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Button"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.SWT"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.layout.RowLayout"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Text"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Composite"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.layout.FillLayout"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.layout.FormLayout"/>
+<fullyQualifiedTypeName name="weka.core.Utils"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.layout.GridLayout"/>
+<fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 </qualifiedTypeNameHistroy>
