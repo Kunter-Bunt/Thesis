@@ -1,7 +1,7 @@
 \section{Datensatz}
 \label{Datensatz}
 
-Die verwendeten Daten stammen aus dem \textit{KIT Smart Home Lab}. Sie wurden "uber fast 3 Jahre zwischen dem 22.08.2011 und dem 31.07.2014 aufgezeichnet, weisen aber einige L"ucken auf. F"ur die Messungen wurden mehrere Smart Meter verwendet, bei Gro{\ss}verbrauchern wie etwa dem Boiler wurden dabei alle drei Phasen gemessen, sie sind durch die Nummer des Smart Meters in den Daten identifizierbar. Bei den restlichen Ger"aten wurde nur je eine Phase gemessen, das hei{\ss}t, dass je 3 Ger"ate an einem Smart Meter angeschlossen sind, sie sind durch die Nummer des Smart Meters in Kombination mit Nummer des verwendeten Ports identifizierbar. Wie viele Phasen zur Messung eines Ger"ats verwendet wurden l"asst sich dem Controller entnehmen.
+Die verwendeten Daten stammen aus dem \textit{KIT Energy Smart Home Lab (ESHL)}. Das ESHL ist ein $60 m^2$ Apartment mit intelligenten Haushaltsger"aten und soll einen m"oglichen zuk"unftigen Haushalt simulieren. Die Daten des ESHL wurden "uber fast 3 Jahre zwischen dem 22.08.2011 und dem 31.07.2014 aufgezeichnet, weisen aber einige L"ucken auf. F"ur die Messungen wurden mehrere Smart Meter verwendet, bei Gro{\ss}verbrauchern wie etwa dem Boiler wurden dabei alle drei Phasen gemessen, sie sind durch die Nummer des Smart Meters in den Daten identifizierbar. Bei den restlichen Ger"aten wurde nur je eine Phase gemessen, das hei{\ss}t, dass je 3 Ger"ate an einem Smart Meter angeschlossen sind. Sie sind durch die Nummer des Smart Meters in Kombination mit Nummer des verwendeten Ports identifizierbar. Wie viele Phasen zur Messung eines Ger"ats verwendet wurden l"asst sich dem Controller entnehmen.
 \begin{table}[h]
 \begin{tabular}{l|l|l|l|l|l}
 UUID & Name & Klassifikation & Controller & Meter & Port \\
@@ -9,6 +9,8 @@ UUID & Name & Klassifikation & Controller & Meter & Port \\
 ...-5602c0a80114 & DRYER & APPLIANCE & 1 & 3 & 0 \\
 ...-5604c0a80114 & WASHINGMACHINE & APPLIANCE & 1 & 7 & 2
 \end{tabular}
+\caption["Ubersicht Ger"atezuordnung]{Beispiele f"ur Ger"atezuordnung, die Waschmaschine ist an (Smart-)Meter 7 Port 2 angeschlossen.}
+\label{profile01458}
 \end{table}
 
 
@@ -16,7 +18,7 @@ UUID & Name & Klassifikation & Controller & Meter & Port \\
 \subsection{Gemessene Daten}
 \label{Gemessene Daten}
 
-Die Daten des \textit{KIT Smart Home Lab} besitzen folgendes Format. \\
+Die Daten des \textit{KIT Energy Smart Home Lab} besitzen folgendes Format. \\
 \begin{table}[h]
 \begin{tabular}{l|l|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1.2cm}|p{2cm}}
 Unixtime & UUID & Con-troller & Meter & Port & Span-nung & Strom-st"arke & Wirk-leistung & Wirkl. \newline aggregiert \\
@@ -25,6 +27,8 @@ Unixtime & UUID & Con-troller & Meter & Port & Span-nung & Strom-st"arke & Wirk-
 1315269463 & ...-5602c0a80114 & 1 & 3 & 0 & 223.8 & 13.16 & 2950 & 38300 \\
 1315269465 & ...-5602c0a80114 & 1 & 3 & 0 & 223.9 & 12.5 & 2796 & 38300
 \end{tabular}
+\caption[Format ESHL Daten]{Format ESHL Datensatz.}
+\label{profile01458}
 \end{table}
 
 Controller, Meter und Port werden, wie oben beschrieben, verwendet, um einen Datenpunkt einen eindeutigen Ger"at zuzuordnen. Hier ist zu beachten, sich diese Werte immer nur gemeinsam verwendet werden d"urfen.
@@ -55,9 +59,15 @@ Profil 4 & 1382900551 & 1382905960 & 5409 & 27.10.2013 \\
 Profil 5 & 1383173215 & 1383180425 & 7210 & 30.10.2013 \\
 Profil 8 & 1384066710 & 1384072260 & 5550 & 10.11.2013
 \end{tabular}
+\caption["Ubersicht Trainingsdaten]{"Ubersicht "uber die annotierten Waschg"ange, die als Trainingsdaten verwendet werden.}
+\label{profile01458}
 \end{table}\\
 Die Waschg"ange sind mit sechs verschiedenen Klassen Sigma 0 bis Sigma 5 annotiert, Sigma 0 ist der \textit{Off-Zustand}. Sigma 1 ist ein normaler Schleudervorgang, hier sind Phasen mit 200-350 Watt und dazwischen kurze Pausen mit ca. 4 Watt Verbrauch typisch.
 Sigma 2 ist ein Heizvorgang, dieser kennzeichnet sich durch einen Verbrauch "uber 1700 Watt.
 Sigma 3 und Sigma 4 sind Pumpvorg"ange und werden durch Verbrauchspitzen von wenigen Sekunden charakterisiert. Unterschieden werden sie anhand der H"ohe der Spitze, ein Vorgang Sigma 4 folgt immer auf einen Vorgang Sigma 3 mit einem Abstand von 50 bis 80 Sekunden.
-Sigma 5 ist das Ausschleudern, es ist ebenfalls ein Schleudervorgang, der aber im Gegensatz zu Sigma 1 ohne Pausen ausgef"uhrt wird. (Bild Profil 0 mit Klassen angezeichnet)
-
+Sigma 5 ist das Ausschleudern, es ist ebenfalls ein Schleudervorgang, der aber im Gegensatz zu Sigma 1 ohne Pausen ausgef"uhrt wird.
+\begin{figure}[ht]
+\includegraphics[height=0.8\textwidth , angle=90]{1_Grafiken/classes0.png}
+	\caption[Typischer Waschgang, farbig annotiert]{Ein typischer Waschgang, je nach Klasse wird die Wirkleistung in unterschiedlichen Farben dargestellt}
+\label{typWasch}
+\end{figure}
