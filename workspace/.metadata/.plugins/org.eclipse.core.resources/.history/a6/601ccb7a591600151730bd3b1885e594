@@ -40,10 +40,11 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		
-		//DBConnect db = new DBConnect("jdbc:mysql://localhost:3306/testdatenbank?" + "user=root");
+		DBConnect db = new DBConnect("jdbc:mysql://localhost:3306/testdatenbank?" +
+                "user=root");
 		
 		
-		//ResultSet result = db.getSQL("SELECT * FROM `training` ORDER BY `Unixtime`");
+		ResultSet result = db.getSQL("SELECT * FROM `training` ORDER BY `Unixtime`");
 		
 		try{
 			
@@ -130,25 +131,6 @@ public class Main {
 					}
 			      }
 			 });
-		    
-		    classify.addSelectionListener(new SelectionListener() {
-		    	
-			      public void widgetSelected(SelectionEvent event) {
-			    	  try {
-						classify(shell, Utils.splitOptions(mlpOpt.getText()), Utils.splitOptions(filOpt.getText()), dataPath.getText(), modelPath.getText());
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
-			      }
-	
-			      public void widgetDefaultSelected(SelectionEvent event) {
-			    	  try {
-			    		  widgetSelected(event);
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
-			      }
-			 });
 			
 			shell.open();	
 			while (!shell.isDisposed()) {
@@ -159,7 +141,7 @@ public class Main {
 
 		}catch(Exception e) {System.out.println(e);}
 		finally {
-			//db.cleanSQL();
+			db.cleanSQL();
 		}
 	}
 	
