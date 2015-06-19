@@ -8,5 +8,8 @@
 \contentsline {subsection}{\numberline {2.3}Die Waschmaschine}{4}{subsection.2.3}
 \contentsline {section}{\numberline {3}Vorverarbeitung}{7}{section.3}
 \contentsline {subsection}{\numberline {3.1}Stand der Technik}{7}{subsection.3.1}
-\contentsline {section}{\numberline {4}Fazit}{8}{section.4}
-\contentsline {section}{\numberline {A}Anhang}{9}{appendix.A}
+\contentsline {subsection}{\numberline {3.2}Extrahieren der Daten}{8}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Zeitreihen}{8}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Spezielle Features}{8}{subsection.3.4}
+\contentsline {section}{\numberline {4}Fazit}{10}{section.4}
+\contentsline {section}{\numberline {A}Anhang}{11}{appendix.A}
