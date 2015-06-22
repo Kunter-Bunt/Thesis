@@ -11,5 +11,9 @@
 \BOOKMARK [2][-]{subsection.3.2}{Extrahieren der Daten}{section.3}% 11
 \BOOKMARK [2][-]{subsection.3.3}{Zeitreihen}{section.3}% 12
 \BOOKMARK [2][-]{subsection.3.4}{Spezielle Features}{section.3}% 13
-\BOOKMARK [1][-]{section.4}{Fazit}{}% 14
-\BOOKMARK [1][-]{appendix.A}{Anhang}{}% 15
+\BOOKMARK [1][-]{section.4}{Klassifizierung}{}% 14
+\BOOKMARK [2][-]{subsection.4.1}{Stand der Technik}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.2}{Weka}{section.4}% 16
+\BOOKMARK [2][-]{subsection.4.3}{Parameter}{section.4}% 17
+\BOOKMARK [1][-]{section.5}{Fazit}{}% 18
+\BOOKMARK [1][-]{appendix.A}{Anhang}{}% 19
