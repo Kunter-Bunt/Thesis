@@ -1,0 +1,225 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 1000 -V 0 -S 0 -E 20 -H "7, 4"
+Relation:     trainingzeit-weka.filters.unsupervised.attribute.NumericToNominal-Rlast-weka.filters.unsupervised.attribute.Remove-R2-8,16-22-weka.filters.unsupervised.attribute.NumericToNominal-Rlast-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    30003
+Attributes:   8
+              Wirkleistung t-3
+              Wirkleistung t-2
+              Wirkleistung t-1
+              Wirkleistung t+0
+              Wirkleistung t+1
+              Wirkleistung t+2
+              Wirkleistung t+3
+              Klasse
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -10.014423355646358
+    Node 13    8.21890494167112
+    Node 14    3.767659296470002
+    Node 15    6.790204614515849
+    Node 16    -2.47631257461465
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -13.949377336112809
+    Node 13    -8.259764288384291
+    Node 14    -3.247664483992312
+    Node 15    16.610103174094228
+    Node 16    3.1921697514977003
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -3.212342507719193
+    Node 13    -7.803771078510185
+    Node 14    -14.668285083670076
+    Node 15    15.88788069446142
+    Node 16    -41.10809729937029
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    1.556535085500268
+    Node 13    -1.3611230804250436
+    Node 14    -1.3747506483504948
+    Node 15    -13.94741605987431
+    Node 16    -5.869579779474938
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.6585813639851612
+    Node 13    -1.2800815052340107
+    Node 14    -1.5741444325121554
+    Node 15    -16.183007635476212
+    Node 16    -1.3643734654033135
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -16.608805790262874
+    Node 13    -2.0068888901216826
+    Node 14    -2.0808269802663655
+    Node 15    -11.343216971269007
+    Node 16    20.696382472321268
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -210.34835232530332
+    Attrib Wirkleistung t-3    -37.96211292987945
+    Attrib Wirkleistung t-2    -28.848539391718386
+    Attrib Wirkleistung t-1    -25.43199586453984
+    Attrib Wirkleistung t+0    -26.61516728808241
+    Attrib Wirkleistung t+1    -27.920332321431008
+    Attrib Wirkleistung t+2    -28.064712931693947
+    Attrib Wirkleistung t+3    -35.71061701348084
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -220.68606306496005
+    Attrib Wirkleistung t-3    -39.81356754364162
+    Attrib Wirkleistung t-2    -30.128724452074476
+    Attrib Wirkleistung t-1    -26.534377592320084
+    Attrib Wirkleistung t+0    -27.839487600893914
+    Attrib Wirkleistung t+1    -29.082032845171778
+    Attrib Wirkleistung t+2    -29.651361406647904
+    Attrib Wirkleistung t+3    -37.85049349772575
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -253.1975528477239
+    Attrib Wirkleistung t-3    -47.50030431934408
+    Attrib Wirkleistung t-2    -35.97740640409929
+    Attrib Wirkleistung t-1    -31.356302606325627
+    Attrib Wirkleistung t+0    -32.074098343147774
+    Attrib Wirkleistung t+1    -33.29627976237506
+    Attrib Wirkleistung t+2    -32.896079360894454
+    Attrib Wirkleistung t+3    -40.45894461032225
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -89.60726966450892
+    Attrib Wirkleistung t-3    10.684380678169662
+    Attrib Wirkleistung t-2    3.9040584771500235
+    Attrib Wirkleistung t-1    0.04457910176634749
+    Attrib Wirkleistung t+0    0.22685075747782402
+    Attrib Wirkleistung t+1    -31.461923314382396
+    Attrib Wirkleistung t+2    -34.027071401981246
+    Attrib Wirkleistung t+3    -38.84859893379222
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -0.31756352452446435
+    Attrib Wirkleistung t-3    5.006184329940851
+    Attrib Wirkleistung t-2    -2.6291706127026067
+    Attrib Wirkleistung t-1    0.1747451261366661
+    Attrib Wirkleistung t+0    1.882784874751021
+    Attrib Wirkleistung t+1    -11.232243037932195
+    Attrib Wirkleistung t+2    -2.164939247212393
+    Attrib Wirkleistung t+3    1.5960414833361338
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -174.74876855825164
+    Attrib Wirkleistung t-3    -50.68097898742099
+    Attrib Wirkleistung t-2    -42.785294744630185
+    Attrib Wirkleistung t-1    -40.057015600464645
+    Attrib Wirkleistung t+0    -40.699276129228075
+    Attrib Wirkleistung t+1    -28.198411862758352
+    Attrib Wirkleistung t+2    13.230697977418675
+    Attrib Wirkleistung t+3    14.00663097022624
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -65.06794572062645
+    Attrib Wirkleistung t-3    -9.066174097618669
+    Attrib Wirkleistung t-2    -3.91203849380795
+    Attrib Wirkleistung t-1    -7.8143185413991265
+    Attrib Wirkleistung t+0    -6.060742398997321
+    Attrib Wirkleistung t+1    -31.43706142254432
+    Attrib Wirkleistung t+2    -20.476711640119728
+    Attrib Wirkleistung t+3    -4.716634538970702
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -34.66193250583168
+    Node 6    10.884302219107925
+    Node 7    11.370662015040566
+    Node 8    13.343188303672159
+    Node 9    4.608521741534495
+    Node 10    -1.2782036220018733
+    Node 11    9.555426182096369
+    Node 12    8.176999953244852
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    -28.20495928433043
+    Node 6    8.708870342631144
+    Node 7    9.234218382271223
+    Node 8    10.734823983348045
+    Node 9    3.255699330255492
+    Node 10    -2.671301916362646
+    Node 11    7.659176490145446
+    Node 12    14.780176158833493
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    0.19558242594828032
+    Node 6    5.074545556171542
+    Node 7    4.5436754056435875
+    Node 8    5.3308822512494745
+    Node 9    24.89717924774763
+    Node 10    -22.075696921528035
+    Node 11    23.91769846398542
+    Node 12    28.13313650152184
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    -10.37878380907173
+    Node 6    -3.663998834077995
+    Node 7    -3.821382620409881
+    Node 8    -4.151722515443244
+    Node 9    -2.2386928730430697
+    Node 10    13.129466727472309
+    Node 11    -2.498700949184483
+    Node 12    3.660796315630412
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+Class 2
+    Input
+    Node 2
+Class 3
+    Input
+    Node 3
+Class 4
+    Input
+    Node 4
+Class 5
+    Input
+    Node 5
+
+
+Time taken to build model: 119.77 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       28731               95.7604 %
+Incorrectly Classified Instances      1272                4.2396 %
+Kappa statistic                          0.9055
+Mean absolute error                      0.0137
+Root mean squared error                  0.0769
+Relative absolute error                  8.7574 %
+Root relative squared error             27.4695 %
+Total Number of Instances            30003     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.697     0          1         0.697     0.821      0.998    0
+                 0.999     0.126      0.949     0.999     0.973      0.998    1
+                 0.998     0          0.998     0.998     0.998      1        2
+                 0.281     0          0.593     0.281     0.381      0.971    3
+                 0.107     0.001      0.346     0.107     0.164      0.977    4
+                 0.96      0.003      0.806     0.96      0.876      0.992    5
+Weighted Avg.    0.958     0.088      0.958     0.958     0.954      0.998
+
+=== Confusion Matrix ===
+
+     a     b     c     d     e     f   <-- classified as
+  2572  1120     0     0     0     0 |     a = 0
+     0 20975     0     0     0    11 |     b = 1
+     0     1  4756     0     3     4 |     c = 2
+     0     3     9    16     9    20 |     d = 3
+     0     5     0     8     9    62 |     e = 4
+     0     9     0     3     5   403 |     f = 5
+
