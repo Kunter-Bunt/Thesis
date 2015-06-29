@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.2)  29 JUN 2015 12:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.2)  29 JUN 2015 12:38
 entering extended mode
 **Thesis.tex
 (C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\Thesis.tex
@@ -587,29 +587,15 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-<0_Logos/kit.jpg, id=91, 199.7061pt x 91.3011pt>
-File: 0_Logos/kit.jpg Graphic file (type jpg)
- <use 0_Logos/kit.jpg>
-Package pdftex.def Info: 0_Logos/kit.jpg used on input line 91.
-(pdftex.def)             Requested size: 149.7792pt x 68.47565pt.
-
-<0_Logos/aifb.png, id=92, 738.76pt x 463.7325pt>
-File: 0_Logos/aifb.png Graphic file (type png)
- <use 0_Logos/aifb.png>
-Package pdftex.def Info: 0_Logos/aifb.png used on input line 97.
-(pdftex.def)             Requested size: 66.48552pt x 41.73412pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 112--136
  
  []
 
 [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/mawo/Documents/G
-itHub/Thesis/Dokumente/AIFB_LaTeX_Vorlage/0_Logos/kit.jpg> <C:/Users/mawo/Docum
-ents/GitHub/Thesis/Dokumente/AIFB_LaTeX_Vorlage/0_Logos/aifb.png>] [2]pdfTeX wa
-rning (ext4): destination with the same identifier (name{page.1}) has been alre
-ady used, duplicate ignored
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]pdfTeX warning (ext4): des
+tination with the same identifier (name{page.1}) has been already used, duplica
+te ignored
 <to be read again> 
                    \relax 
 l.143 \cleardoublepage
@@ -625,12 +611,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.159 \thispagestyle{empty}\cleardoublepage
-                                            [2
+[2
 
 ] [3
 
@@ -680,7 +661,7 @@ x) [4
 
 ]
 (C:\Users\mawo\Documents\GitHub\Thesis\Dokumente\AIFB_LaTeX_Vorlage\einleitung.
-tex <1_Grafiken/fig1armel.jpg, id=185, 712.16063pt x 492.33937pt>
+tex <1_Grafiken/fig1armel.jpg, id=177, 712.16063pt x 492.33937pt>
 File: 1_Grafiken/fig1armel.jpg Graphic file (type jpg)
 
 <use 1_Grafiken/fig1armel.jpg>
@@ -787,7 +768,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--47
 
  []
 
-<1_Grafiken/classes0.png, id=214, 1162.3425pt x 593.21625pt>
+<1_Grafiken/classes0.png, id=205, 1162.3425pt x 593.21625pt>
 File: 1_Grafiken/classes0.png Graphic file (type png)
 
 <use 1_Grafiken/classes0.png>
@@ -949,29 +930,28 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 202.
  ) 
 Here is how much of TeX's memory you used:
- 9831 strings out of 493921
- 147282 string characters out of 3144880
+ 9817 strings out of 493921
+ 147055 string characters out of 3144880
  294632 words of memory out of 3000000
- 12683 multiletter control sequences out of 15000+200000
- 16354 words of font info for 112 fonts, out of 3000000 for 9000
+ 12673 multiletter control sequences out of 15000+200000
+ 16042 words of font info for 111 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  40i,12n,43p,1012b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Thesis.pdf (27 pages, 454319 bytes).
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Thesis.pdf (26 pages, 371619 bytes).
 PDF statistics:
- 350 PDF objects out of 1000 (max. 8388607)
+ 344 PDF objects out of 1000 (max. 8388607)
  68 named destinations out of 1000 (max. 500000)
- 18629 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 18107 words of extra memory for PDF output out of 20736 (max. 10000000)
 
