@@ -1,6 +1,7 @@
 \section{Vorverarbeitung}
 \label{Vorverarbeitung}
-
+Verfahren des maschinellen Lernens sind Daten-getriebene Verfahren. Die Qualit"at des Ergebnisses der Klassifizierung ist also in besonderem Ma{\ss}e abhängig von der Qualit"at und Quantit"at der Daten. Die Vorverarbeitung soll durch m"ogliche Filterungen, Normalisierungen und "ahnliches die Qualit"at des Datensatzes sichern und soll durch die Auswahl und Berechnung bestimmter Merkmale, den sogenannten Features, dem von dieser Arbeit verwendeten neuronalen Netz die Unterscheidung der verschiedenen Klassen m"oglichst einfach machen.\\
+An der Klassifizierung beziehungsweise der Vorhersage von Energiedaten wird bereits seit "uber 20 Jahren geforscht und es wurden viele verschiedene Vorverarbeitungsschritte und aussagekr"aftige Features untersucht. Deshalb wird im Folgenden zun"achst eine "Ubersicht "uber die bisherige Forschung im Bereich der Vorverarbeitung gegeben und anschließend untersucht, welche Features f"ur die Unterscheidung verschiedener ger"ateinterner Zust"ande in Frage kommen.
 
 \subsection{Stand der Technik}
 \label{Stand der Technik}
@@ -8,34 +9,34 @@
 	Sie gibt die elektrische Leistung an, die von einem Ger"at in andere Leistungen (z.B. W"arme oder Bewegung) umgewandelt werden kann.  %TODO Verweis finden
 	Oft wird die Wirkleistung durch gr"obere Quantisierung oder Normalisierung gegl"attet, um die Erkennung der Klassen zu vereinfachen. \cite{hart1992nonintrusive} verwendet hierzu folgende Formel:\\
 	\begin{center}
-	$P_{norm} (t) = (\frac{Û}{U(t)})^2*P(t)$ \\ 
-	mit Wirkleistung P(t) und Spannung U(T), die Nennspannung Û beträgt in Europa 230 Volt.\\
+	$P_{norm} (t) = (\frac{U_{nenn}}{U(t)})^2*P(t)$ \\ 
+	mit Wirkleistung $P(t)$ und Spannung $U(t)$, die Nennspannung $U_{nenn}$ beträgt in Europa 230 Volt.\\
 	\end{center}
 	Die Normalisierung bietet den Vorteil, dass sie nicht verlustbehaftet ist und wird deshalb h"aufig verwendet, wenn die Spannung gemessen wurde.\\
 	Mit der Wirkleistung allein ist man jedoch nicht in der Lage Ger"ate mit sehr "ahnlichem Verbrauch zu unterscheiden, ein Beispiel w"aren hier ein 2kW Motor und ein 2kW Heizelement. 
 	 Diese lassen sich mit Hilfe der Blindleistung, welche nicht in andere Leistungen umgewandelt wird, unterscheiden, weil der Motor als induktiver Verbraucher mehr Blindleistung als das Heizelement aus dem Stromnetz zieht. %TODO Grafik Hart und WaMa KIT
-	 Nachteil hier ist jedoch, dass die Blindleistung (und auch die Spannung) zusätzlich gemessen werden muss, die Ber"ucksichtigung dieses Features kostet also gegebenenfalls Geld \cite{zeifman2011nonintrusive}. \\
+	 Nachteil hier ist jedoch, dass die Blindleistung (und auch die Spannung) zusätzlich gemessen werden muss, dies kostet gegebenenfalls Geld \cite{zeifman2011nonintrusive}. \\
 	 Vergleicht man jedoch eine 60W Gl"uhbirne und einen Laptop mit einem 60W Netzteil, dann stellt man fest, dass diese sich auch unter Hinzunahme der Blindleistung kaum unterscheiden lassen \cite{laughman2003power}. 
 	 Hier hilft die Betrachtung von Micro Level Features. 
 	 Dabei werden die Wellenformen und die harmonischen Komponenten des Frequenzspektrums verwendet, um Verbraucher zu unterscheiden. Laughman et al. \cite{laughman2003power} zeigen z.B., dass sich Glühbirne und Netzteil in der 3. harmonischen Komponente deutlich unterscheiden.
 	 Zus"atzlich ver"andern viele Ger"ate die Wellenform des Stroms, so dass in diesem Bereich weiteres Potential für die Unterscheidung verschiedener Ger"ate vorliegt \cite{liang2010load}. \\ %TODO evtl Grafik Spektrum/Wellenform
 	 Micro Level Features bieten sehr gute Unterscheidungsm"oglichkeiten, ben"otigen aber auch ein sehr hochfrequent aufgel"ostes Signal, "ublich sind mehrere kHz. Anderson et al. \cite{anderson2012blued} bietet einen Datensatz mit 12kHz Aufl"osung. \\
-	 Messger"ate für eine solche Aufl"osung sind wesentlich teurer als die h"aufig f"ur Wirk- und Blindleistung verwendeten Ger"ate mit einer Aufl"osung von 1Hz und sind im Gegensatz zu Letzteren oft nicht in normalen Haushalten mit Smartmeter vorhanden \cite{zeifman2011nonintrusive}. \\ 
+	 Messger"ate für eine solche Aufl"osung sind wesentlich teurer als die h"aufig f"ur Wirk- und Blindleistung verwendeten Ger"ate mit einer Aufl"osung von 1Hz und sind im Gegensatz zu Letzteren oft nicht in normalen Haushalten mit intelligentem Stromz"ahler vorhanden \cite{zeifman2011nonintrusive}. \\ 
 	 Da sie in der Praxis häufiger vorhanden sind, wird in dieser Arbeit mit den Macro Level Features mit einer Aufl"osung von 1Hz gearbeitet.
 	 
 \subsection{Extrahieren der Daten}
 \label{Extrahieren der Daten}
-	Da die Trainingsdaten leider nur die Wirkleistung zum aktuellen Zeitpunkt angeben, m"ussen diese erneut aus dem gesamten Datensatz herausgezogen werden. Zun"achst wird der Datensatz mit Meter = 7 und Port = 2 gefiltert und so die Waschmaschine ausgew"ahlt. Anschließend werden die Startzeiten der einzelnen Waschg"ange "uber ihre Heizphase gesucht und mit Hilfe der L"ange des Waschgangs der zu filternde Abschnitt für jedes Profil bestimmt. Hat man diese nun herausgefiltert, hat man neben der Wirkleistung zus"atzlich Spannung, Stromst"arke und aggregierte Wirkleistung zur Verf"ugung. Dies ist wichtig um z.B. die normalisierte Wirkleistung zu berechnen.
+	Da die Trainingsdaten leider nur die Wirkleistung zum aktuellen Zeitpunkt angeben, m"ussen diese erneut aus dem gesamten Datensatz extrahiert werden. Zun"achst wird der Datensatz mit Meter = 7 und Port = 2 gefiltert und so die Waschmaschine ausgew"ahlt. Anschließend werden die Startzeiten der einzelnen Waschg"ange "uber ihre Heizphase gesucht und mit Hilfe der L"ange des Waschgangs der zu filternde Abschnitt für jedes Profil bestimmt. Hat man diese nun herausgefiltert, hat man neben der Wirkleistung zus"atzlich Spannung, Stromst"arke und aggregierte Wirkleistung zur Verf"ugung. Dies ist wichtig um z.B. die normalisierte Wirkleistung zu berechnen.
 	 
 \subsection{Zeitreihen}
 \label{Zeitreihen}
-	Da sich die Klassen der Waschmaschine zum Teil "uberschneiden ist eine fehlerfreie Klassifizierung nur mit Hilfe der Wirkleistung zum aktuellen Zeitpunkt ausgeschlossen. Dies f"allt insbesondere bei Klasse 3 und 4 auf, ihre Flanken fallen oft in den selben Wertebereich, nur ihre Spitzen sind klar unterschiedlich. \\
+	Eine fehlerfreie Klassifizierung nur mit Hilfe der Wirkleistung zum aktuellen Zeitpunkt ist wegen der Überlappung der Wertebereiche der einzelnen Klassen ausgeschlossen. Dies f"allt insbesondere bei Klasse 3 und 4 auf, ihre Flanken fallen oft in den selben Wertebereich, nur ihre Spitzen sind klar unterschiedlich. \\
 	Eine M"oglichkeit diese mit einzubeziehen ist die zus"atzliche Verwendung von vergangenen und zuk"unftigen Werten f"ur die Wirkleistung. Diese Arbeit verwendet zun"achst eine Umgebung von 10 Sekunden, also die Werte der Wirkleistung von $t-10$ bis $t+10$ f"ur einen in Sekunden angegeben Zeitpunkt t.\\ 
 	Zu beachten ist die spezielle Komprimierung der Daten des ESHL. Zur einfacheren Verarbeitung werden diese zun"achst wieder auf sek"undliche Daten erweitert und anschließend die Werte der Wirkleistung der vorherigen und n"achsten 10 Sekunden angeh"angt. Dies erlaubt eine Verarbeitung auch außerhalb der zeitlichen Reihenfolge mit nur einer einzigen Zeile dieses neuen Datensatzes.\\
-	Nachteil ist die n"otige Kenntnis zuk"unftiger Werte, dies verhindert eine sofortige Klassifizierung. Nutzt man den Wert $t+10$ h"angt der Klassifikator der Gegenwart immer mindestens 10 Sekunden nach, dies sollte zur Erstellung großer, annotierter Datens"atze jedoch keine Rolle spielen.
+	Nachteil ist die n"otige Kenntnis zuk"unftiger Werte, dies verhindert eine sofortige Klassifizierung. Nutzt man den Wert $t+10$ h"angt der Klassifikator der Gegenwart immer mindestens 10 Sekunden nach. Es wird davon ausgegangen, dass sehr große Datens"atze klassifiziert werden und deshalb durch den Verlust der letzten 10 Sekunden nur ein Bruchteil des ursprünglichen Datensatzes gegen"uber dem resultierenden, annotierten Datensatz verloren geht.
 	
 \subsection{Spezielle Features}
 \label{Spezielle Features}
-	Neben der M"oglichkeit auf die F"ahigkeit der Generalisierung des KNNs zu vertrauen und diesem einfach die Zeitreihe zu pr"asentieren, besteht auch die M"oglichkeit ihm neben der Wirkleistung zum aktuellen Zeitpunkt noch weitere, speziell für die Waschmaschine berechnete Features zu pr"asentieren.\\ 
-	Für die Unterscheidung von Klasse 3 und 4 l"asst sich die Verbrauchspitze in den umgebenden 10 Sekunden berechnen um diese klar trennen zu k"onnen. Um Klasse 4 von Klasse 5 zu trennen kann man sich den Durchschnitt der folgenden Sekunden anschauen, dieser sollte bei einem Punkt der Klasse 5 deutlich h"oher liegen als bei Klasse 4. Die dritte schwierige Unterscheidung ist die von Klasse 1 und 5, hier hilft es sich das Minimum der vorher gehenden Werte anzusehen, Klasse 1 weist hier durch die Pausen Werte von ca. 4 Watt auf, w"ahrend Klasse 5 Werte "uber 200 Watt haben sollte. Alle anderen Klassenunterscheidungen sollten sich mit Hilfe der Wirkleistung treffen lassen.\\
+	Neben der M"oglichkeit auf die F"ahigkeit der Generalisierung des KNNs zu vertrauen und diesem einfach die Zeitreihe zu pr"asentieren, besteht auch die M"oglichkeit ihm neben der Wirkleistung zum aktuellen Zeitpunkt noch weitere, speziell für die Waschmaschine berechnete Features als Eingabedaten zur Verfügung zu stellen.\\ 
+	Für die Unterscheidung der Pumpvorgänge von Klasse 3 und 4 l"asst sich die Verbrauchspitze in den umgebenden 10 Sekunden berechnen um diese klar trennen zu k"onnen. Um Klasse 4 von Klasse 5 zu trennen kann der Durchschnitt der folgenden Sekunden betrachtet werden, dieser sollte bei einem Punkt der Klasse 5 deutlich h"oher liegen als bei Klasse 4. Die dritte schwierige Unterscheidung ist die von Klasse 1 und 5, hier hilft es das Minimum der vorher gehenden Werte zu betrachten, Klasse 1 weist hier durch die Pausen Werte von ca. 4 Watt auf, w"ahrend Klasse 5 Werte "uber 200 Watt haben sollte. Alle anderen Klassenunterscheidungen sollten sich mit Hilfe der Wirkleistung treffen lassen.\\
 	Zus"atzlich zur Verwendung von Zukunftswerten weist diese Auswahl an Features den Nachteil auf, nur f"ur diese Waschmaschine explizit zu sein, f"ur andere Geräte m"ussten gegebenenfalls neue Features gefunden werden, dies erh"oht den zeitlichen Aufwand, der zur Klassifizierung eines kompletten Datensatzes n"otig ist, enorm.

@@ -10,7 +10,7 @@
 \contentsline {subsection}{\numberline {3.1}Stand der Technik}{8}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Extrahieren der Daten}{9}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Zeitreihen}{9}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Spezielle Features}{9}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.4}Spezielle Features}{10}{subsection.3.4}
 \contentsline {section}{\numberline {4}Klassifizierung}{11}{section.4}
 \contentsline {subsection}{\numberline {4.1}Stand der Technik}{11}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Weka}{11}{subsection.4.2}
