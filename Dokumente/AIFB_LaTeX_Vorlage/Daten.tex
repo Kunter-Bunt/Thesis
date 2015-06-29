@@ -1,7 +1,7 @@
 \section{Datensatz}
 \label{Datensatz}
 
-Die verwendeten Daten stammen aus dem \textit{KIT Energy Smart Home Lab (ESHL)}. Das ESHL ist ein $60 m^2$ Apartment mit intelligenten Haushaltsger"aten und soll einen m"oglichen zuk"unftigen Haushalt simulieren. Die Daten des ESHL wurden "uber fast 3 Jahre zwischen dem 22.08.2011 und dem 31.07.2014 aufgezeichnet, weisen aber einige L"ucken auf. F"ur die Messungen wurden mehrere Smart Meter verwendet, bei Gro{\ss}verbrauchern wie etwa dem Boiler wurden dabei alle drei Phasen gemessen, sie sind durch die Nummer des Smart Meters in den Daten identifizierbar. Bei den restlichen Ger"aten wurde nur je eine Phase gemessen, das hei{\ss}t, dass je 3 Ger"ate an einem Smart Meter angeschlossen sind. Sie sind durch die Nummer des Smart Meters in Kombination mit Nummer des verwendeten Ports identifizierbar. Wie viele Phasen zur Messung eines Ger"ats verwendet wurden l"asst sich dem Controller entnehmen.
+Die verwendeten Daten stammen aus dem \textit{KIT Energy Smart Home Lab (ESHL)}. Das ESHL ist ein $60 m^2$ Apartment mit intelligenten Haushaltsger"aten und soll einen m"oglichen zuk"unftigen Haushalt simulieren. Die Daten des ESHL wurden "uber fast 3 Jahre zwischen dem 22.08.2011 und dem 31.07.2014 aufgezeichnet, weisen aber einige L"ucken auf. F"ur die Messungen wurden mehrere Stromzähler verwendet, bei Gro{\ss}verbrauchern wie etwa dem Boiler wurden dabei alle drei Phasen gemessen, sie sind durch die Anschlussnummer des Stromzählers in den Daten identifizierbar. Bei den restlichen Ger"aten wurde nur je eine Phase gemessen, das hei{\ss}t, dass  3 unterschiedliche Ger"ate an einem Stromzähler angeschlossen sind. Sie sind durch die Nummer des Smart Meters in Kombination mit Nummer des verwendeten Anschlusses (Port) identifizierbar. Wie viele Phasen zur Messung eines Ger"ats verwendet wurden l"asst sich dem Kommunikationsgateway (Controller) entnehmen.
 \begin{table}[h]
 \begin{tabular}{l|l|l|l|l|l}
 UUID & Name & Klassifikation & Controller & Meter & Port \\
@@ -21,7 +21,7 @@ UUID & Name & Klassifikation & Controller & Meter & Port \\
 Die Daten des \textit{KIT Energy Smart Home Lab} besitzen folgendes Format. \\
 \begin{table}[h]
 \begin{tabular}{l|l|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1.2cm}|p{2cm}}
-Unixtime & UUID & Con-troller & Meter & Port & Span-nung & Strom-st"arke & Wirk-leistung & Wirkl. \newline aggregiert \\
+Unixtime & UUID & Con-troller & Meter & Port & Span-nung & Strom-st"arke & Wirk-leistung & Zählerstand \\
 \hline
 1382291846 & ...-5604c0a80114 & 1 & 7 & 2 & 218.5 & 8.96 & 1956 & 145550  \\
 1315269463 & ...-5602c0a80114 & 1 & 3 & 0 & 223.8 & 13.16 & 2950 & 38300 \\
@@ -41,8 +41,8 @@ Eine Besonderheit stellt das Aufzeichnungsintervall dar. Die Smart Meter erzeuge
 \label{Berechnete Daten}
 
 Die Messung von Spannung und Stromst"arke erlaubt es eine Vielzahl von Energiewerten zu berechnen, in diesem Abschnitt werden die Schein- und Blindleistung vorgestellt, das Kapitel zur Vorverarbeitung wird zus"atzlich eine Form der Normalisierung vorstellen. 
-Die Scheinleistung ist das Produkt aus Spannung und Stromst"arke und ist die gesamte, aus dem Netz gezogene Leistung:\\ $Scheinleistung = Spannung * Stromst"arke$\\[0.5cm]
-Zur Berechnung der Blindleistung werden Schein- und Wirkleistung genutzt, die Blindleistung ist dabei Leistung, die aus dem Netz gezogen wird ohne tats"achlich genutzt zu werden:\\ $Blindleistung = \sqrt{Scheinleistung^2 - Wirkleistung^2}$ \\
+Die Scheinleistung $S$ ist das Produkt aus Spannung $U$ und Stromst"arke $I$ und ist die gesamte, aus dem Netz gezogene Leistung:\\ $S = U * I$\\[0.5cm]
+Zur Berechnung der Blindleistung $Q$ werden Schein- und Wirkleistung $P$ genutzt, die Blindleistung ist dabei Leistung, die aus dem Netz gezogen wird ohne tats"achlich genutzt zu werden:\\ $Q = \sqrt{S^2 - P^2}$ \\
 
 
 \subsection{Die Waschmaschine}

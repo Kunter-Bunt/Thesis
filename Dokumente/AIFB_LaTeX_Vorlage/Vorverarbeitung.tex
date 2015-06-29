@@ -8,20 +8,20 @@
 	Sie gibt die elektrische Leistung an, die von einem Ger"at in andere Leistungen (z.B. W"arme oder Bewegung) umgewandelt werden kann.  %TODO Verweis finden
 	Oft wird die Wirkleistung durch gr"obere Quantisierung oder Normalisierung gegl"attet, um die Erkennung der Klassen zu vereinfachen. \cite{hart1992nonintrusive} verwendet hierzu folgende Formel:\\
 	\begin{center}
-	$P_{norm} (t) = (\frac{Nennspannung}{V(t)})^2*P(t)$ \\ 
-	mit P := Wirkleistung in Watt und V := Spannung in Volt, die Nennspannung beträgt in Europa 230 Volt.\\
+	$P_{norm} (t) = (\frac{Û}{U(t)})^2*P(t)$ \\ 
+	mit Wirkleistung P(t) und Spannung U(T), die Nennspannung Û beträgt in Europa 230 Volt.\\
 	\end{center}
 	Die Normalisierung bietet den Vorteil, dass sie nicht verlustbehaftet ist und wird deshalb h"aufig verwendet, wenn die Spannung gemessen wurde.\\
 	Mit der Wirkleistung allein ist man jedoch nicht in der Lage Ger"ate mit sehr "ahnlichem Verbrauch zu unterscheiden, ein Beispiel w"aren hier ein 2kW Motor und ein 2kW Heizelement. 
 	 Diese lassen sich mit Hilfe der Blindleistung, welche nicht in andere Leistungen umgewandelt wird, unterscheiden, weil der Motor als induktiver Verbraucher mehr Blindleistung als das Heizelement aus dem Stromnetz zieht. %TODO Grafik Hart und WaMa KIT
 	 Nachteil hier ist jedoch, dass die Blindleistung (und auch die Spannung) zusätzlich gemessen werden muss, die Ber"ucksichtigung dieses Features kostet also gegebenenfalls Geld \cite{zeifman2011nonintrusive}. \\
 	 Vergleicht man jedoch eine 60W Gl"uhbirne und einen Laptop mit einem 60W Netzteil, dann stellt man fest, dass diese sich auch unter Hinzunahme der Blindleistung kaum unterscheiden lassen \cite{laughman2003power}. 
-	 Hier hilft die Betrachtung von micro level Features. 
+	 Hier hilft die Betrachtung von Micro Level Features. 
 	 Dabei werden die Wellenformen und die harmonischen Komponenten des Frequenzspektrums verwendet, um Verbraucher zu unterscheiden. Laughman et al. \cite{laughman2003power} zeigen z.B., dass sich Glühbirne und Netzteil in der 3. harmonischen Komponente deutlich unterscheiden.
 	 Zus"atzlich ver"andern viele Ger"ate die Wellenform des Stroms, so dass in diesem Bereich weiteres Potential für die Unterscheidung verschiedener Ger"ate vorliegt \cite{liang2010load}. \\ %TODO evtl Grafik Spektrum/Wellenform
-	 Micro level Features bieten sehr gute Unterscheidungsm"oglichkeiten, ben"otigen aber auch ein sehr hochfrequent aufgel"ostes Signal, "ublich sind mehrere kHz. Anderson et al. \cite{anderson2012blued} bietet einen Datensatz mit 12kHz Aufl"osung. \\
+	 Micro Level Features bieten sehr gute Unterscheidungsm"oglichkeiten, ben"otigen aber auch ein sehr hochfrequent aufgel"ostes Signal, "ublich sind mehrere kHz. Anderson et al. \cite{anderson2012blued} bietet einen Datensatz mit 12kHz Aufl"osung. \\
 	 Messger"ate für eine solche Aufl"osung sind wesentlich teurer als die h"aufig f"ur Wirk- und Blindleistung verwendeten Ger"ate mit einer Aufl"osung von 1Hz und sind im Gegensatz zu Letzteren oft nicht in normalen Haushalten mit Smartmeter vorhanden \cite{zeifman2011nonintrusive}. \\ 
-	 Da sie in der Praxis häufiger vorhanden sind, wird in dieser Thesis mit den macro level Features mit einer Aufl"osung von 1Hz gearbeitet.
+	 Da sie in der Praxis häufiger vorhanden sind, wird in dieser Arbeit mit den Macro Level Features mit einer Aufl"osung von 1Hz gearbeitet.
 	 
 \subsection{Extrahieren der Daten}
 \label{Extrahieren der Daten}
@@ -32,7 +32,7 @@
 	Da sich die Klassen der Waschmaschine zum Teil "uberschneiden ist eine fehlerfreie Klassifizierung nur mit Hilfe der Wirkleistung zum aktuellen Zeitpunkt ausgeschlossen. Dies f"allt insbesondere bei Klasse 3 und 4 auf, ihre Flanken fallen oft in den selben Wertebereich, nur ihre Spitzen sind klar unterschiedlich. \\
 	Eine M"oglichkeit diese mit einzubeziehen ist die zus"atzliche Verwendung von vergangenen und zuk"unftigen Werten f"ur die Wirkleistung. Diese Arbeit verwendet zun"achst eine Umgebung von 10 Sekunden, also die Werte der Wirkleistung von $t-10$ bis $t+10$ f"ur einen in Sekunden angegeben Zeitpunkt t.\\ 
 	Zu beachten ist die spezielle Komprimierung der Daten des ESHL. Zur einfacheren Verarbeitung werden diese zun"achst wieder auf sek"undliche Daten erweitert und anschließend die Werte der Wirkleistung der vorherigen und n"achsten 10 Sekunden angeh"angt. Dies erlaubt eine Verarbeitung auch außerhalb der zeitlichen Reihenfolge mit nur einer einzigen Zeile dieses neuen Datensatzes.\\
-	Nachteil ist die n"otige Kenntnis zuk"unftiger Werte, dies verhindert eine live Klassifizierung. Nutzt man den Wert $t+10$ h"angt der Klassifikator der Gegenwart immer mindestens 10 Sekunden nach, dies sollte zur Erstellung großer, annotierter Datens"atze jedoch keine Rolle spielen.
+	Nachteil ist die n"otige Kenntnis zuk"unftiger Werte, dies verhindert eine sofortige Klassifizierung. Nutzt man den Wert $t+10$ h"angt der Klassifikator der Gegenwart immer mindestens 10 Sekunden nach, dies sollte zur Erstellung großer, annotierter Datens"atze jedoch keine Rolle spielen.
 	
 \subsection{Spezielle Features}
 \label{Spezielle Features}
