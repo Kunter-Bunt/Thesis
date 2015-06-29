@@ -1,0 +1,77 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     trainingzeit-weka.filters.unsupervised.attribute.NumericToNominal-Rlast-weka.filters.unsupervised.attribute.Remove-R2-8,16-22-weka.filters.unsupervised.attribute.NumericToNominal-Rlast-weka.filters.unsupervised.attribute.Remove-R1,6-8-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    30003
+Attributes:   3
+              Wirkleistung t-1
+              Wirkleistung t+0
+              Klasse
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Linear Node 0
+    Inputs    Weights
+    Threshold    0.7633743805537242
+    Node 1    -1.5835103104062598
+    Node 2    -1.419715324950536
+    Node 3    -1.0245938770039595
+    Node 4    -1.016923953452199
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    0.13422223339098407
+    Attrib Wirkleistung t-1    -2.2994901292063745
+    Attrib Klasse=0    2.5204527830299828
+    Attrib Klasse=1    0.6358465442918021
+    Attrib Klasse=2    -2.9449082346409226
+    Attrib Klasse=3    -0.4133856885616524
+    Attrib Klasse=4    -0.336184871456977
+    Attrib Klasse=5    -0.05479563440102082
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -2.3016463559904996
+    Attrib Wirkleistung t-1    -5.887979422117277
+    Attrib Klasse=0    1.484888169246811
+    Attrib Klasse=1    1.1976119353521313
+    Attrib Klasse=2    1.8167301232301136
+    Attrib Klasse=3    1.4296654700626807
+    Attrib Klasse=4    1.5744982908097178
+    Attrib Klasse=5    1.7807369952659426
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -1.8807633392517333
+    Attrib Wirkleistung t-1    -3.5687260547724406
+    Attrib Klasse=0    1.622072840787232
+    Attrib Klasse=1    1.7773652642574016
+    Attrib Klasse=2    2.1044306675231996
+    Attrib Klasse=3    0.6638769996406126
+    Attrib Klasse=4    0.4966945847132867
+    Attrib Klasse=5    1.0525357458272095
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -1.9392802742699506
+    Attrib Wirkleistung t-1    -3.5048531287309648
+    Attrib Klasse=0    1.6337802440040745
+    Attrib Klasse=1    1.7815901541409351
+    Attrib Klasse=2    2.1054299283037814
+    Attrib Klasse=3    0.6200335161388966
+    Attrib Klasse=4    0.449362018599906
+    Attrib Klasse=5    1.0022626588326713
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 14.06 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.9915
+Mean absolute error                     54.3664
+Root mean squared error                 91.6551
+Relative absolute error                 10.8884 %
+Root relative squared error             13.4004 %
+Total Number of Instances            30003     
+
