@@ -34,8 +34,8 @@ Unixtime & UUID & Con-troller & Meter & Port & Span-nung & Strom-st"arke & Wirk-
 
 Controller, Meter und Port werden, wie oben beschrieben, verwendet, um einen Datenpunkt einen eindeutigen Ger"at zuzuordnen. Hier ist zu beachten, sich diese Werte immer nur gemeinsam verwendet werden d"urfen, nur so ist eine eindeutige Identifizierung eines Ger"ates m"oglich.
 Die Spalte mit der UUID-Zuordnung wird ignoriert, denn sie enth"alt ebenfalls die Information um welches Ger"at es sich handelt und ist somit redundant zu Controller, Meter und Port. \\
-Ein Datenpunkt enth"alt die gemessene Spannung, die Stromst"arke und die Wirkleistung. Es wird zus"atzlich die aggregierte Wirkleistung gemessen, welche aber zun"achst ignoriert wird, da sie sich aus der Wirkleistung berechnen l"asst. \\
-Eine Besonderheit stellt das Aufzeichnungsintervall dar. Die Smart Meter erzeugen jede Sekunde einen neuen Datenpunkt f"ur jeden Port, dieser wird aber nur gespeichert, wenn sich die Wirkleistung im Vergleich zum letzten gespeicherten Punkt um 5 Watt Wirkleistung unterscheidet. So werden insbesondere lange \textit{Off} Phasen auf einen Datenpunkt komprimiert, es gehen aber auch kleinere Schwankungen in der Wirkleistung von sehr verbrauchsarmen Ger"aten verloren.
+Ein Datenpunkt enth"alt die gemessene Spannung, die Stromst"arke und die Wirkleistung. Es wird zus"atzlich die aggregierte Wirkleistung (Z"ahlerstand) gemessen, welche aber zun"achst ignoriert wird, da sie sich aus der Wirkleistung berechnen l"asst. \\
+Eine Besonderheit stellt das Aufzeichnungsintervall dar. Die Stromz"ahler erzeugen jede Sekunde einen neuen Datenpunkt f"ur jeden Anschluss, dieser wird aber nur gespeichert, wenn sich die Wirkleistung im Vergleich zum letzten gespeicherten Punkt um 5 Watt Wirkleistung unterscheidet. So werden insbesondere lange \textit{Off} Phasen auf einen Datenpunkt komprimiert, es gehen aber auch kleinere Schwankungen in der Wirkleistung von sehr verbrauchsarmen Ger"aten verloren.
 
 
 \subsection{Berechnete Daten}
@@ -49,7 +49,7 @@ Zur Berechnung der Blindleistung $Q$ werden Schein- und Wirkleistung $P$ genutzt
 \subsection{Die Waschmaschine}
 \label{Die Waschmaschine}
 
-Die Waschmaschine ist ein besonders interessantes Ger"at f"ur die Klassifikation, denn sie hat nicht nur einen \textit{On-} und einen \textit{Off-Zustand}, sondern einen Motor, der mit verschiedenen Drehzahlen laufen kann, ein Heizelement und eine Pumpe. F"ur die Waschmaschine existieren au{\ss}erdem einige annotierte Waschg"ange (Tabelle \ref{profile01458}) die als Trainingsdaten verwendet werden k"onnen.\\
+Die Waschmaschine ist ein besonders interessantes Ger"at f"ur die Klassifikation, denn sie hat nicht nur einen \textit{On-} und einen \textit{Off-Zustand}, sondern einen Motor, der mit verschiedenen Drehzahlen laufen kann, ein Heizelement und eine Pumpe. F"ur die Waschmaschine existieren au{\ss}erdem einige annotierte Waschg"ange (Tabelle \ref{profile01458}), die als Trainingsdaten verwendet werden k"onnen.\\
 \begin{table}[h]
 \begin{tabular}{l|p{3.5cm}|p{3.5cm}|l|l}
 Profil & Startzeit \newline (Unix time stamp) & Endzeit \newline (Unix time stamp) & Dauer (Sekunden) & Datum \\
@@ -67,9 +67,10 @@ Die Waschg"ange sind mit sechs verschiedenen Klassen Sigma 0 bis Sigma 5 annotie
 Sigma 2 ist ein Heizvorgang, dieser kennzeichnet sich durch einen Verbrauch "uber 1700 Watt.
 Sigma 3 und Sigma 4 sind Pumpvorg"ange und werden durch Verbrauchspitzen von wenigen Sekunden charakterisiert. Unterschieden werden sie anhand der H"ohe der Spitze, ein Vorgang Sigma 4 folgt immer auf einen Vorgang Sigma 3 mit einem Abstand von 50 bis 80 Sekunden.
 Sigma 5 ist das Ausschleudern, es ist ebenfalls ein Schleudervorgang, der aber im Gegensatz zu Sigma 1 ohne Pausen ausgef"uhrt wird. \\
+
 Grafik~\ref{typWasch} veranschaulicht die Wertebereiche und Lage der Klassen innerhalb eines Waschgangs. Die Klassen sind dabei wie in der Legende beschrieben farbig markiert, da die dunkelblau  gef"arbte Klasse 0 typischerweise einen Verbrauch von 0 Watt aufweist verl"auft der Graph zu diesen Zeitpunkten auf der x-Achse. Die rot gekennzeichneten Abschnitte der Heizvorg"ange sind in der ersten H"alfte des Waschgangs zu finden, hier wird das Wasser zun"achst aufgew"armt und muss dann mehrfach nachgeheizt werden um die Temperatur zu halten. Die hellblau und lila markierten Abschnitte der Pumpvorg"ange befinden sich in der 2. H"alfte des Waschgangs. Sie sind sehr kurz und folgen in regelm"a{\ss}igen Abst"anden aufeinander. Der Ausschleudervorgang von Klasse 5 ist nahe dem Ende des Waschgangs zu finden, er ist gelb gekennzeichnet.
 \begin{figure}[ht]
-\includegraphics[height=0.8\textwidth , angle=90]{1_Grafiken/classes0.png}
+\includegraphics[height=0.7\textwidth , angle=90]{1_Grafiken/classes0.png}
 	\caption[Typischer Waschgang, farbig annotiert]{Ein typischer Waschgang, je nach Klasse wird die Wirkleistung in unterschiedlichen Farben dargestellt}
 \label{typWasch}
 \end{figure}
