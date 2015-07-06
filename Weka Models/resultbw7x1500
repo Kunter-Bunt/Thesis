@@ -1,7 +1,7 @@
 === Run information ===
 
 Scheme:weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 1500 -V 0 -S 0 -E 20 -H a
-Relation:     trainingzeit-weka.filters.unsupervised.attribute.NumericToNominal-Rlast-weka.filters.unsupervised.attribute.Remove-R1-4,13-22
+Relation:     trainingzeit-weka.filters.unsupervised.attribute.Remove-R1-4,13-22-weka.filters.unsupervised.attribute.NumericToNominal-Rlast
 Instances:    30003
 Attributes:   9
               Wirkleistung t-7
@@ -13,7 +13,7 @@ Attributes:   9
               Wirkleistung t-1
               Wirkleistung t+0
               Klasse
-Test mode:split 66.0% train, remainder test
+Test mode:10-fold cross-validation
 
 === Classifier model (full training set) ===
 
@@ -144,15 +144,15 @@ Class
     Node 0
 
 
-Time taken to build model: 133.74 seconds
+Time taken to build model: 92.57 seconds
 
-=== Evaluation on test split ===
+=== Cross-validation ===
 === Summary ===
 
-Correlation coefficient                  0.9934
-Mean absolute error                     35.2155
-Root mean squared error                 80.3881
-Relative absolute error                  6.9907 %
-Root relative squared error             11.5621 %
-Total Number of Instances            10201     
+Correlation coefficient                  0.9933
+Mean absolute error                     47.6979
+Root mean squared error                 81.0541
+Relative absolute error                  9.5529 %
+Root relative squared error             11.8504 %
+Total Number of Instances            30003     
 

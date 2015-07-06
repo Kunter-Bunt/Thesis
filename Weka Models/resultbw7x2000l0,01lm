@@ -1,0 +1,158 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.MultilayerPerceptron -L 0.01 -M 0.1 -N 2000 -V 0 -S 0 -E 20 -H a
+Relation:     trainingzeit-weka.filters.unsupervised.attribute.Remove-R1-4,13-22-weka.filters.unsupervised.attribute.NumericToNominal-Rlast
+Instances:    30003
+Attributes:   9
+              Wirkleistung t-7
+              Wirkleistung t-6
+              Wirkleistung t-5
+              Wirkleistung t-4
+              Wirkleistung t-3
+              Wirkleistung t-2
+              Wirkleistung t-1
+              Wirkleistung t+0
+              Klasse
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Linear Node 0
+    Inputs    Weights
+    Threshold    0.2260224442919926
+    Node 1    0.1787724346206693
+    Node 2    -0.9408447693711853
+    Node 3    -1.0042115659614412
+    Node 4    -0.5606800504498102
+    Node 5    -0.5583427839771644
+    Node 6    0.8369175407234712
+    Node 7    -0.300556279664391
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.5095590742147355
+    Attrib Wirkleistung t-7    -0.1503152067528922
+    Attrib Wirkleistung t-6    0.16567136029807625
+    Attrib Wirkleistung t-5    0.03791296075799982
+    Attrib Wirkleistung t-4    -0.02654928264382062
+    Attrib Wirkleistung t-3    -0.2536269567753228
+    Attrib Wirkleistung t-2    -0.21504925612644646
+    Attrib Wirkleistung t-1    0.6027122462597633
+    Attrib Klasse=0    0.36400931313272333
+    Attrib Klasse=1    0.02973519814097889
+    Attrib Klasse=2    0.37928686846303417
+    Attrib Klasse=3    0.38042369700253675
+    Attrib Klasse=4    0.28843323619643657
+    Attrib Klasse=5    0.36803680798583754
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.9017234085180705
+    Attrib Wirkleistung t-7    -0.15480938158469051
+    Attrib Wirkleistung t-6    -1.604159394751132
+    Attrib Wirkleistung t-5    0.3404854673055753
+    Attrib Wirkleistung t-4    0.9632160568450893
+    Attrib Wirkleistung t-3    0.5779082181305264
+    Attrib Wirkleistung t-2    -0.6032544889743712
+    Attrib Wirkleistung t-1    -2.976837046643685
+    Attrib Klasse=0    1.2112392042038265
+    Attrib Klasse=1    0.06585293843686994
+    Attrib Klasse=2    0.025047516936068825
+    Attrib Klasse=3    0.5122261039958695
+    Attrib Klasse=4    0.328615416242635
+    Attrib Klasse=5    1.5250969219429096
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.42268551672012084
+    Attrib Wirkleistung t-7    -0.24748191852463536
+    Attrib Wirkleistung t-6    1.5370724062001884
+    Attrib Wirkleistung t-5    0.012306991635771189
+    Attrib Wirkleistung t-4    -0.9490843469796371
+    Attrib Wirkleistung t-3    -0.5285019023625064
+    Attrib Wirkleistung t-2    0.5006191891939964
+    Attrib Wirkleistung t-1    -0.8454303162807937
+    Attrib Klasse=0    0.40047147490242146
+    Attrib Klasse=1    1.6339928162688877
+    Attrib Klasse=2    -1.1940849518474572
+    Attrib Klasse=3    0.51690553616291
+    Attrib Klasse=4    0.4881630598832193
+    Attrib Klasse=5    -0.08546888443343975
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.4565997411120089
+    Attrib Wirkleistung t-7    0.26760691971120426
+    Attrib Wirkleistung t-6    -0.12751992029854484
+    Attrib Wirkleistung t-5    -0.11045735954001246
+    Attrib Wirkleistung t-4    -0.12666072447280233
+    Attrib Wirkleistung t-3    0.15182857670309077
+    Attrib Wirkleistung t-2    0.3247460672118356
+    Attrib Wirkleistung t-1    -0.017045092250951212
+    Attrib Klasse=0    0.3161306911593229
+    Attrib Klasse=1    -0.14096086560211543
+    Attrib Klasse=2    -0.0884311174762849
+    Attrib Klasse=3    0.42864822765543176
+    Attrib Klasse=4    0.7504768024565844
+    Attrib Klasse=5    0.3298551224906437
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -0.6553673533065821
+    Attrib Wirkleistung t-7    0.5229421145427223
+    Attrib Wirkleistung t-6    -0.4725402168592007
+    Attrib Wirkleistung t-5    -0.09540279515888396
+    Attrib Wirkleistung t-4    0.023696469712081523
+    Attrib Wirkleistung t-3    0.17667800080771395
+    Attrib Wirkleistung t-2    0.08922075672553853
+    Attrib Wirkleistung t-1    -0.7260051292047294
+    Attrib Klasse=0    0.5250391922695944
+    Attrib Klasse=1    0.213358750289938
+    Attrib Klasse=2    0.06576938249681248
+    Attrib Klasse=3    0.5123971312511831
+    Attrib Klasse=4    0.9406098108144471
+    Attrib Klasse=5    0.21148911753405475
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.670615977004496
+    Attrib Wirkleistung t-7    0.18473173921080938
+    Attrib Wirkleistung t-6    -0.20221065101915583
+    Attrib Wirkleistung t-5    0.07913271765259834
+    Attrib Wirkleistung t-4    0.006136115786569272
+    Attrib Wirkleistung t-3    -0.0013764909681522914
+    Attrib Wirkleistung t-2    0.10405457032524922
+    Attrib Wirkleistung t-1    2.6937668221525937
+    Attrib Klasse=0    0.4485330510955194
+    Attrib Klasse=1    0.5559982341477697
+    Attrib Klasse=2    1.0371871154754555
+    Attrib Klasse=3    0.4367181524151963
+    Attrib Klasse=4    0.01255435900456404
+    Attrib Klasse=5    0.0995947593851547
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.6642094046446751
+    Attrib Wirkleistung t-7    0.22385366544930563
+    Attrib Wirkleistung t-6    0.14217164483927922
+    Attrib Wirkleistung t-5    0.08006023194181246
+    Attrib Wirkleistung t-4    0.02484435095100739
+    Attrib Wirkleistung t-3    -0.04937647041488041
+    Attrib Wirkleistung t-2    -0.17002654290460462
+    Attrib Wirkleistung t-1    -0.8166783367400147
+    Attrib Klasse=0    0.6109579281785474
+    Attrib Klasse=1    0.6070670426480721
+    Attrib Klasse=2    0.06210469273594453
+    Attrib Klasse=3    0.6070489951495047
+    Attrib Klasse=4    0.53192764099784
+    Attrib Klasse=5    0.3846510819694681
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 118.47 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.9952
+Mean absolute error                     31.3822
+Root mean squared error                 66.9218
+Relative absolute error                  6.2852 %
+Root relative squared error              9.7843 %
+Total Number of Instances            30003     
+
