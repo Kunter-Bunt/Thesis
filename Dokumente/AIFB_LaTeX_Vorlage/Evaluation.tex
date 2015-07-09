@@ -3,14 +3,14 @@
 
 \subsection{Einleitung}
 \label{Einleitung}
-Die Evaluation soll kl"aren, wie genau die neuronalen Netze die Aufgaben der Klassifizierung und Generierung ausf"uhren k"onnen. Um eine m"oglichst gute L"osung zu bekommen untersucht die Evaluation, welche Features und Parameter sich als vorteilhaft erweisen und wann Features und Verarbeitungsschritte "uberfl"ussig sind. $L$, $M$, $N$ und $H$ bezeichnen die in Kapitel~\ref{Klassifizierung} erl"auterten Features. $L$ ist die Lernrate, $M$ das Momentum, $N$ die Anzahl der Trainingsepochen und $H$ beschreibt die Anzahl der Knoten im Hiddenlayer, hat ein Netz mehrere Hiddenlayer, werden diese durch Kommata getrennt.
+Die Evaluation soll kl"aren, wie genau die neuronalen Netze die Aufgaben der Klassifizierung und Generierung ausf"uhren k"onnen. Um eine m"oglichst gute L"osung zu bekommen wird in der Evaluation untersucht, welche Features und Parameter sich als vorteilhaft erweisen und wann Features und Verarbeitungsschritte "uberfl"ussig sind. $L$, $M$, $N$ und $H$ bezeichnen die in Kapitel~\ref{Klassifizierung} erl"auterten Features. $L$ ist die Lernrate, $M$ das Momentum, $N$ die Anzahl der Trainingsepochen und $H$ beschreibt die Anzahl der Knoten im Hiddenlayer. Hat ein Netz mehrere Hiddenlayer, werden diese durch Kommata getrennt.
 
 \subsection{Klassifizierung}
 \label{EvalKlassifizierung}
 Bei der Klassifizierung handelt es sich um eine Aufgabe bei der ein Lastgang in ein Zustandsprofil umgewandelt werden soll. Eingabe sind Merkmale des Lastgangs und Ausgabe ist eine Klassenzuordnung f"ur jeden Datenpunkt.\\
 Als Ma{\ss} f"ur die G"ute der Klassifizierung dient die Genauigkeit und damit die Frage, bei wie vielen Datenpunkten (Instanzen) die richtige Klasse klassifiziert wurde. Eine Gewichtung der Fehlertypen findet zun"achst nicht statt.\\
 
-Zu Beginn besch"aftigen wir uns mit der Auswahl des richtigen Zeitfensters. Es zeigt sich schnell, das selbst dieser begrenzte Featureraum bereits mehrere lokale Optima aufweist, siehe dazu Tabelle~\ref{EvalZeit}. Die besten Ergebnisse liefert der Zeitraum von 3 Sekunden um den Zeitpunkt t, f"ur diesen werden weitere Tests durchgef"uhrt.\\
+Zu Beginn besch"aftigen wir uns mit der Auswahl des richtigen Zeitfensters. Es zeigt sich schnell, dass selbst dieser begrenzte Featureraum bereits mehrere lokale Optima aufweist, siehe dazu Tabelle~\ref{EvalZeit}. Die besten Ergebnisse liefert der Zeitraum von 3 Sekunden um den Zeitpunkt t, f"ur diesen werden weitere Tests durchgef"uhrt.\\
 
 Zun"achst variieren wir die Epochen \textit{N}. Festzustellen ist, dass eine Erh"ohung der Epochen "uber 1000 keine Verbesserung der Genauigkeit mehr mit sich bringt. Die Normalisierung der Wirkleistung verschlechtert das Ergebnis. Dies ist vermutlich auf die vorherige Quantisierung der Daten zur"uckzuf"uhren, diese sorgt daf"ur, dass die Normalisierung die Werte eher streut statt gl"attet. \\
 Das Hinzuf"ugen eines zweiten Hiddenlayer f"uhrt zu einer Verbesserung der Klassifikationsgenauigkeit. Die Ver"anderung von Lernrate und Momentum, beziehungsweise das Hinzuf"ugen eines dritten Hiddenlayer bringen jedoch keine weiteren Verbesserungen. Die Ergebnisse f"ur die Tests mit verschiedenen Parametern sind in Tabelle~\ref{EvalParam} zusammengefasst.\\
@@ -98,11 +98,10 @@ Die Aufgabe der Generierung erstellt aus einem Zustandsprofil wieder einen Lastg
 
 Zu Beginn steht auch hier wieder die Auswahl des richtigen Zeitfensters. Tabelle~\ref{GenZeit} zeigt die Ergebnisse bez"uglich der Standardkonfiguration von Weka, die Verwendung der letzten 7 Sekunden stellt das Optimum im Suchbereich dar, f"ur dieses werden weitere Tests durchgef"uhrt.\\
 
-Bei der Variierung der Parameter wird mit der Anzahl der Epochen und der Breite des Hiddenlayers begonnen. Es zeigt sich, dass ein d"unnerer Hiddenlayer besser die Charakteristik des Lastgangs erkennen kann. Beim anschlie{\ss}enden variieren von Lernrate und Momentum zeigt sich au{\ss}erdem, dass f"ur beide Parameter niedrige Werte das Ergebnis verbessern, dies gilt insbesondere f"ur die Kombination von niedriger Lernrate mit niedrigem Momentum. Die Ergebinsse finden sie in Tablle~\ref{GenParam} \\
-
+Bei der Variierung der Parameter wird mit der Anzahl der Epochen und der Breite des Hiddenlayers begonnen. Es zeigt sich, dass ein schmaler Hiddenlayer besser die Charakteristik des Lastgangs erkennen kann, als ein breiter. Beim anschlie{\ss}enden variieren von Lernrate und Momentum zeigt sich au{\ss}erdem, dass f"ur beide Parameter niedrige Werte das Ergebnis verbessern, dies gilt insbesondere f"ur die Kombination von niedriger Lernrate mit niedrigem Momentum. Die Ergebinsse finden Sie in Tablle~\ref{GenParam}. 
 Danach werden noch einmal die Epochen erh"oht um festzustellen, ob sich dadurch das Ergebnis noch weiter verbessern l"asst, dies ist jedoch schon nach 2000 Epochen nicht mehr der Fall. \\
 
-Abbildung~\ref{GenWasch} zeigt in blau einen echten Waschgang und in gr"un einen, mit der Kenntnis vergangener Werte, vorhergesagten. Gut zu erkennen ist die Tendenz des Netzes den Lastgang zu gl"atten, Spitzen und Schluchten im Verbrauch weichen im prognostizierten Verlauf weniger stark vom Mittelwert der Klasse ab.
+Abbildung~\ref{GenWasch} zeigt in blau einen echten Waschgang und in gr"un einen, mit der Kenntnis vergangener Werte, Vorhergesagten. Gut zu erkennen ist die Tendenz des Netzes den Lastgang zu gl"atten, Spitzen und Schluchten im Verbrauch weichen im prognostizierten Verlauf weniger stark vom Mittelwert der Klasse ab.
 
 \begin{table}[h]
 \begin{tabular}{l|p{4cm}|p{4cm}}
