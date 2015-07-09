@@ -24,6 +24,12 @@
 {\sc Hart, George~William}: {\em Nonintrusive appliance load monitoring}.
 \newblock Proceedings of the IEEE, 80(12):1870--1891, 1992.
 
+\bibitem[HIT08]{hara2008multi}
+{\sc Hara, Shinji}, {\sc Jun-ichi Imura} \btxandlong{}\ {\sc Koji Tsumura}:
+  {\em Multi-resolved dynamical system theory for large scale complex systems}.
+\newblock \Btxinlong{}\ {\em SICE Annual Conference, 2008}, \btxpageslong{}\
+  3115--3118. IEEE, 2008.
+
 \bibitem[KJ11]{kolter2011redd}
 {\sc Kolter, J~Zico} \btxandlong{}\ {\sc Matthew~J Johnson}: {\em REDD: A
   public data set for energy disaggregation research}.
