@@ -1,9 +1,9 @@
 \section{Evaluation}
 \label{Evaluation}
 
-\subsection{Einleitung}
-\label{Einleitung}
-Die Evaluation soll kl"aren, wie genau die neuronalen Netze die Aufgaben der Klassifizierung und Generierung ausf"uhren k"onnen. Um eine m"oglichst gute L"osung zu bekommen wird in der Evaluation untersucht, welche Features und Parameter sich als vorteilhaft erweisen und wann Features und Verarbeitungsschritte "uberfl"ussig sind. $L$, $M$, $N$ und $H$ bezeichnen die in Kapitel~\ref{Klassifizierung} erl"auterten Features. $L$ ist die Lernrate, $M$ das Momentum, $N$ die Anzahl der Trainingsepochen und $H$ beschreibt die Anzahl der Knoten im Hiddenlayer. Hat ein Netz mehrere Hiddenlayer, werden diese durch Kommata getrennt.
+%\subsection{Einleitung}
+%\label{Einleitung}
+Die Evaluation soll kl"aren, wie genau die neuronalen Netze die Aufgaben der Klassifizierung und Generierung ausf"uhren k"onnen. Um eine m"oglichst gute L"osung zu bekommen wird in der Evaluation untersucht, welche Features und Parameter sich als vorteilhaft erweisen und wann Features und Verarbeitungsschritte "uberfl"ussig sind. $L$, $M$, $N$ und $H$ bezeichnen die in Kapitel~\ref{Klassifizierung} erl"auterten Features. $L$ ist die Lernrate, $M$ das Momentum, $N$ die Anzahl der Trainingsepochen und $H$ beschreibt die Anzahl der Knoten in der verdeckten Schicht. Hat ein Netz mehrere verdeckte Schichten, werden diese durch Kommata getrennt.
 
 \subsection{Klassifizierung}
 \label{EvalKlassifizierung}
@@ -17,7 +17,7 @@ Das Hinzuf"ugen eines zweiten Hiddenlayer f"uhrt zu einer Verbesserung der Klass
 
 Die speziell f"ur die Waschmaschine gesuchten Features schneiden schlechter als die Zeitreihen ab (Tabelle~\ref{EvalExp}). Dies soll kein gro{\ss}er R"uckschlag f"ur diese Arbeit sein, die Zeitreihen sind leichter zu berechnen und besitzen allgemeineren Charakter. Letztere Eigenschaft scheint nicht nur praktisch, sondern auch der Klassifikation dienlich zu sein.\\
 
-Ein genauerer Blick auf die Konfusionsmatrix~\ref{EvalConf} des Netzes mit dem besten Ergebnis verr"at, dass die meisten Verwechslungen zwischen Klasse 3, 4 und 5 auftreten. Das Netz hat hier offenbar Probleme die Unterschiede in den Verbrauchsspitzen zu erkennen. Diese Art von Fehlern umfasst 62 Instanzen und somit knapp $2/3$ der Fehlklassifikationen. \\
+Ein genauerer Blick auf die Konfusionsmatrix~\ref{EvalConf} des Netzes mit dem besten Ergebnis verr"at, dass die meisten Verwechselungen zwischen Klasse 3, 4 und 5 auftreten. Das Netz hat hier offenbar Probleme die Unterschiede in den Verbrauchsspitzen zu erkennen. Diese Art von Fehlern umfasst 62 Instanzen und somit knapp $2/3$ der Fehlklassifikationen. \\
 Die 22 Fehler bei denen ein \textit{Off-Zustand} als Klasse 1 klassifiziert wurden sind im Prinzip \textit{off-by-one-Fehler}. Das Netz erkennt nicht die semantische Bedeutung des Features t+0 und klassifiziert auch solche Zeitpunkte als \textit{On-Zustand}, bei denen die Werte t+1,2,3 bzw. t-1,2,3 gr"o{\ss}er Null sind, obwohl t+0 gleich Null ist. Die restlichen Fehlklassifikationen sind "ahnlich zu betrachten, insgesamt machen die \textit{off-by-one-Fehler} mit 33 Instanzen gut $1/3$ der Fehlklassifikationen aus. \\
 
 \begin{table}[h]
