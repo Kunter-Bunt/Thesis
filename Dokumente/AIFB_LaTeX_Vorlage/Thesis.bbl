@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{AOB{\etalchar{+}}12}
+\begin{thebibliography}{KBK{\etalchar{+}}11}
 
 \bibitem[AGSA13]{armel2013disaggregation}
 {\sc Armel, K~Carrie}, {\sc Abhay Gupta}, {\sc Gireesh Shrimali} \btxandlong{}\
@@ -30,6 +30,14 @@
 \newblock \Btxinlong{}\ {\em SICE Annual Conference, 2008}, \btxpageslong{}\
   3115--3118. IEEE, 2008.
 
+\bibitem[KBK{\etalchar{+}}11]{kruse2011computational}
+{\sc Kruse, R}, {\sc C~Borgelt}, {\sc F~Klawonn}, {\sc C~Moewes}, {\sc
+  G~Ru{\ss}} \btxandlong{}\ {\sc M~Steinbrecher}: {\em Computational
+  Intelligence: Eine methodische Einf{\"u}hrung in K{\"u}nstliche Neuronale
+  Netze}.
+\newblock Evolution{\"a}re Algorithmen, Fuzzy-Systeme und Bayes-Netze Vieweg+
+  Teubner, Wiesbaden, 2011.
+
 \bibitem[KJ11]{kolter2011redd}
 {\sc Kolter, J~Zico} \btxandlong{}\ {\sc Matthew~J Johnson}: {\em REDD: A
   public data set for energy disaggregation research}.
@@ -49,11 +57,32 @@
   and methodology}.
 \newblock Power Delivery, IEEE Transactions on, 25(2):551--560, 2010.
 
+\bibitem[Pin99]{pinkus1999approximation}
+{\sc Pinkus, Allan}: {\em Approximation theory of the MLP model in neural
+  networks}.
+\newblock Acta Numerica, 8:143--195, 1999.
+
+\bibitem[RHW88]{rumelhart1988learning}
+{\sc Rumelhart, David~E}, {\sc Geoffrey~E Hinton} \btxandlong{}\ {\sc Ronald~J
+  Williams}: {\em Learning representations by back-propagating errors}.
+\newblock Cognitive modeling, 5:3, 1988.
+
+\bibitem[SNL06]{srinivasan2006neural}
+{\sc Srinivasan, D}, {\sc WS~Ng} \btxandlong{}\ {\sc AC~Liew}: {\em
+  Neural-network-based signature recognition for harmonic source
+  identification}.
+\newblock Power Delivery, IEEE Transactions on, 21(1):398--405, 2006.
+
 \bibitem[VBG08]{vandenbergh2008individual}
 {\sc Vandenbergh, Michael~P}, {\sc Jack Barkenbus} \btxandlong{}\ {\sc
   Jonathan~M Gilligan}: {\em Individual carbon emissions: The low-hanging
   fruit}.
 \newblock UCLA Law Review, 55:08--36, 2008.
+
+\bibitem[Wer74]{werbos1974beyond}
+{\sc Werbos, Paul}: {\em Beyond regression: New tools for prediction and
+  analysis in the behavioral sciences}.
+\newblock Dissertation, Havard University, 1974.
 
 \bibitem[ZR11]{zeifman2011nonintrusive}
 {\sc Zeifman, Michael} \btxandlong{}\ {\sc Kurt Roth}: {\em Nonintrusive
