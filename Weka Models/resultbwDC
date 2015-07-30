@@ -1,0 +1,49 @@
+=== Run information ===
+
+Scheme:weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     trainingzeit-weka.filters.unsupervised.attribute.NumericToNominal-Rlast-weka.filters.unsupervised.attribute.Remove-R13-22
+Instances:    30003
+Attributes:   13
+              Unixtime
+              Wirkleistung t-10
+              Wirkleistung t-9
+              Wirkleistung t-8
+              Wirkleistung t-7
+              Wirkleistung t-6
+              Wirkleistung t-5
+              Wirkleistung t-4
+              Wirkleistung t-3
+              Wirkleistung t-2
+              Wirkleistung t-1
+              Wirkleistung t+0
+              Klasse
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 30003
+Number of Rules : 24
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 67
+	Merit of best subset found:   76.822
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 11,13,12
+
+Time taken to build model: 20.13 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.9934
+Mean absolute error                     49.8884
+Root mean squared error                 78.5874
+Relative absolute error                  9.9916 %
+Root relative squared error             11.4898 %
+Total Number of Instances            30003     
+

@@ -1,0 +1,70 @@
+=== Run information ===
+
+Scheme:weka.classifiers.rules.ZeroR 
+Relation:     trainingzeit-weka.filters.unsupervised.attribute.NumericToNominal-Rlast
+Instances:    30003
+Attributes:   23
+              Unixtime
+              Wirkleistung t-10
+              Wirkleistung t-9
+              Wirkleistung t-8
+              Wirkleistung t-7
+              Wirkleistung t-6
+              Wirkleistung t-5
+              Wirkleistung t-4
+              Wirkleistung t-3
+              Wirkleistung t-2
+              Wirkleistung t-1
+              Wirkleistung t+0
+              Wirkleistung t+1
+              Wirkleistung t+2
+              Wirkleistung t+3
+              Wirkleistung t+4
+              Wirkleistung t+5
+              Wirkleistung t+6
+              Wirkleistung t+7
+              Wirkleistung t+8
+              Wirkleistung t+9
+              Wirkleistung t+10
+              Klasse
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+ZeroR predicts class value: 1
+
+Time taken to build model: 0.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       20986               69.9463 %
+Incorrectly Classified Instances      9017               30.0537 %
+Kappa statistic                          0     
+Mean absolute error                      0.1568
+Root mean squared error                  0.2799
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances            30003     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          0.5      0
+                 1         1          0.699     1         0.823      0.5      1
+                 0         0          0         0         0          0.5      2
+                 0         0          0         0         0          0.482    3
+                 0         0          0         0         0          0.486    4
+                 0         0          0         0         0          0.5      5
+Weighted Avg.    0.699     0.699      0.489     0.699     0.576      0.5  
+
+=== Confusion Matrix ===
+
+     a     b     c     d     e     f   <-- classified as
+     0  3692     0     0     0     0 |     a = 0
+     0 20986     0     0     0     0 |     b = 1
+     0  4764     0     0     0     0 |     c = 2
+     0    57     0     0     0     0 |     d = 3
+     0    84     0     0     0     0 |     e = 4
+     0   420     0     0     0     0 |     f = 5
+

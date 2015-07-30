@@ -1,0 +1,102 @@
+=== Run information ===
+
+Scheme:weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     trainingzeit-weka.filters.unsupervised.attribute.NumericToNominal-Rlast
+Instances:    30003
+Attributes:   23
+              Unixtime
+              Wirkleistung t-10
+              Wirkleistung t-9
+              Wirkleistung t-8
+              Wirkleistung t-7
+              Wirkleistung t-6
+              Wirkleistung t-5
+              Wirkleistung t-4
+              Wirkleistung t-3
+              Wirkleistung t-2
+              Wirkleistung t-1
+              Wirkleistung t+0
+              Wirkleistung t+1
+              Wirkleistung t+2
+              Wirkleistung t+3
+              Wirkleistung t+4
+              Wirkleistung t+5
+              Wirkleistung t+6
+              Wirkleistung t+7
+              Wirkleistung t+8
+              Wirkleistung t+9
+              Wirkleistung t+10
+              Klasse
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=23 #classindex=22
+Network structure (nodes followed by parents)
+Unixtime(70): Klasse 
+Wirkleistung t-10(11): Klasse 
+Wirkleistung t-9(14): Klasse 
+Wirkleistung t-8(11): Klasse 
+Wirkleistung t-7(12): Klasse 
+Wirkleistung t-6(14): Klasse 
+Wirkleistung t-5(12): Klasse 
+Wirkleistung t-4(11): Klasse 
+Wirkleistung t-3(12): Klasse 
+Wirkleistung t-2(12): Klasse 
+Wirkleistung t-1(12): Klasse 
+Wirkleistung t+0(12): Klasse 
+Wirkleistung t+1(10): Klasse 
+Wirkleistung t+2(14): Klasse 
+Wirkleistung t+3(14): Klasse 
+Wirkleistung t+4(14): Klasse 
+Wirkleistung t+5(15): Klasse 
+Wirkleistung t+6(17): Klasse 
+Wirkleistung t+7(17): Klasse 
+Wirkleistung t+8(18): Klasse 
+Wirkleistung t+9(16): Klasse 
+Wirkleistung t+10(16): Klasse 
+Klasse(6): 
+LogScore Bayes: -751980.751691006
+LogScore BDeu: -761901.8521261334
+LogScore MDL: -763471.2245693706
+LogScore ENTROPY: -753177.6354927093
+LogScore AIC: -755174.6354927093
+
+
+Time taken to build model: 0.72 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       29442               98.1302 %
+Incorrectly Classified Instances       561                1.8698 %
+Kappa statistic                          0.9612
+Mean absolute error                      0.0062
+Root mean squared error                  0.0749
+Relative absolute error                  3.9609 %
+Root relative squared error             26.7492 %
+Total Number of Instances            30003     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          0.997     1         0.999      1        0
+                 0.975     0.001      1         0.975     0.987      1        1
+                 0.998     0.001      0.996     0.998     0.997      1        2
+                 0.912     0.008      0.177     0.912     0.297      0.997    3
+                 0.94      0.009      0.226     0.94      0.365      0.997    4
+                 0.969     0          0.971     0.969     0.97       1        5
+Weighted Avg.    0.981     0.001      0.995     0.981     0.987      1    
+
+=== Confusion Matrix ===
+
+     a     b     c     d     e     f   <-- classified as
+  3692     0     0     0     0     0 |     a = 0
+    11 20456    19   236   252    12 |     b = 1
+     0     8  4756     0     0     0 |     c = 2
+     0     0     0    52     5     0 |     d = 3
+     0     0     0     5    79     0 |     e = 4
+     0     0     0     0    13   407 |     f = 5
+

@@ -1,0 +1,106 @@
+=== Run information ===
+
+Scheme:weka.clusterers.SimpleKMeans -N 6 -A "weka.core.EuclideanDistance -R first-last" -I 500 -S 10
+Relation:     trainingzeit-weka.filters.unsupervised.attribute.NumericToNominal-Rlast
+Instances:    30003
+Attributes:   23
+              Unixtime
+              Wirkleistung t-10
+              Wirkleistung t-9
+              Wirkleistung t-8
+              Wirkleistung t-7
+              Wirkleistung t-6
+              Wirkleistung t-5
+              Wirkleistung t-4
+              Wirkleistung t-3
+              Wirkleistung t-2
+              Wirkleistung t-1
+              Wirkleistung t+0
+              Wirkleistung t+1
+              Wirkleistung t+2
+              Wirkleistung t+3
+              Wirkleistung t+4
+              Wirkleistung t+5
+              Wirkleistung t+6
+              Wirkleistung t+7
+              Wirkleistung t+8
+              Wirkleistung t+9
+              Wirkleistung t+10
+Ignored:
+              Klasse
+Test mode:Classes to clusters evaluation on training data 
+=== Model and evaluation on training set ===
+
+
+kMeans
+======
+
+Number of iterations: 15
+Within cluster sum of squared errors: 3727.582208978253
+Missing values globally replaced with mean/mode
+
+Cluster centroids:
+                                           Cluster#
+Attribute                 Full Data               0               1               2               3               4               5
+                            (30003)         (20421)           (199)           (779)          (1636)          (4725)          (2243)
+===================================================================================================================================
+Unixtime            1382958725.4267 1382721136.1013  1382942783.191 1384068103.7202 1383044671.1711 1384069713.2246 1382334897.4494
+Wirkleistung t-10          365.2017         75.0022       1820.1809       1875.9076       1868.5929         75.7511       1866.7133
+Wirkleistung t-9           365.2019         73.6997       1841.9296       1880.6316       1875.3142          74.579       1872.5698
+Wirkleistung t-8           365.2032         72.4086       1862.9045       1885.2503       1881.8863          73.404       1878.5591
+Wirkleistung t-7           365.2045         71.1796       1883.3869       1889.7612       1888.3594         72.2286       1884.1373
+Wirkleistung t-6           365.2048         69.9798       1897.7789       1894.3851       1894.9572         71.0565       1889.8377
+Wirkleistung t-5           365.2051         69.9462       1763.3869       1898.9782       1901.5892         71.0895       1895.5684
+Wirkleistung t-4           365.2053         70.0562       1613.0352       1903.5712       1908.3105         71.1335       1901.3197
+Wirkleistung t-3           365.2056         70.1781       1451.0452        1908.439       1915.0941         71.5526       1907.0646
+Wirkleistung t-2           365.2059         70.2683       1291.8995       1913.2914       1921.8252         71.9678        1912.897
+Wirkleistung t-1           365.2061          70.382       1132.1206            1918       1928.5672         72.3547       1918.6732
+Wirkleistung t+0           365.2064         70.4921        973.2261       1922.6829       1935.3729         72.7192       1924.4128
+Wirkleistung t+1           365.2079         71.7059        815.7889       1922.4955       1935.1846         73.9179       1925.0281
+Wirkleistung t+2           365.2095         72.9069        665.3467       1922.3363       1935.1357         75.1183       1925.0236
+Wirkleistung t+3           365.2097         74.0852        516.2111        1922.475       1935.1039         76.2942       1925.0281
+Wirkleistung t+4           365.2099         75.2309        369.0854       1922.5186       1935.1736         77.4696        1925.111
+Wirkleistung t+5           365.2101         76.3658        224.4623       1922.5905       1935.1663         78.6066       1925.1975
+Wirkleistung t+6           365.2103         77.5332         84.3216       1922.6213       1934.3741         79.7558       1925.1511
+Wirkleistung t+7           365.2105         78.7289         82.3116       1917.7664       1927.8509         80.5084       1919.3054
+Wirkleistung t+8           365.2107         79.9322         83.6482       1912.9037        1920.857         81.2855       1913.3865
+Wirkleistung t+9           365.2119         81.1341         86.3216        1908.018       1913.8447         82.0787       1907.3634
+Wirkleistung t+10          365.2122         82.3425         85.4573       1903.1322       1907.0355         82.8944       1901.3883
+
+
+
+
+Time taken to build model (full training data) : 3.11 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      20421 ( 68%)
+1        199 (  1%)
+2        779 (  3%)
+3       1636 (  5%)
+4       4725 ( 16%)
+5       2243 (  7%)
+
+
+Class attribute: Klasse
+Classes to Clusters:
+
+     0     1     2     3     4     5  <-- assigned to cluster
+  2951     0     0     0   741     0 | 0
+ 17005   118     0     0  3863     0 | 1
+    18    81   779  1636     7  2243 | 2
+    44     0     0     0    13     0 | 3
+    68     0     0     0    16     0 | 4
+   335     0     0     0    85     0 | 5
+
+Cluster 0 <-- 1
+Cluster 1 <-- No class
+Cluster 2 <-- No class
+Cluster 3 <-- No class
+Cluster 4 <-- 0
+Cluster 5 <-- 2
+
+Incorrectly clustered instances :	10014.0	 33.3767 %
+

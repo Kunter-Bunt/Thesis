@@ -1,0 +1,47 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.RBFNetwork -B 2 -S 1 -R 1.0E-8 -M -1 -W 0.1
+Relation:     trainingzeit-weka.filters.unsupervised.attribute.NumericToNominal-Rlast-weka.filters.unsupervised.attribute.Remove-R13-22
+Instances:    30003
+Attributes:   13
+              Unixtime
+              Wirkleistung t-10
+              Wirkleistung t-9
+              Wirkleistung t-8
+              Wirkleistung t-7
+              Wirkleistung t-6
+              Wirkleistung t-5
+              Wirkleistung t-4
+              Wirkleistung t-3
+              Wirkleistung t-2
+              Wirkleistung t-1
+              Wirkleistung t+0
+              Klasse
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Radial basis function network
+(Linear regression applied to K-means clusters as basis functions):
+
+
+Linear Regression Model
+
+Wirkleistung t+0 =
+
+    903.4068 * pCluster_0_0 +
+   -901.9486 * pCluster_0_1 +
+    977.235 
+
+Time taken to build model: 0.77 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.9201
+Mean absolute error                    117.7811
+Root mean squared error                267.823 
+Relative absolute error                 23.589  %
+Root relative squared error             39.1568 %
+Total Number of Instances            30003     
+

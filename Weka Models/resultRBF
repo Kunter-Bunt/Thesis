@@ -1,0 +1,109 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.RBFNetwork -B 2 -S 1 -R 1.0E-8 -M -1 -W 0.1
+Relation:     trainingzeit-weka.filters.unsupervised.attribute.NumericToNominal-Rlast
+Instances:    30003
+Attributes:   23
+              Unixtime
+              Wirkleistung t-10
+              Wirkleistung t-9
+              Wirkleistung t-8
+              Wirkleistung t-7
+              Wirkleistung t-6
+              Wirkleistung t-5
+              Wirkleistung t-4
+              Wirkleistung t-3
+              Wirkleistung t-2
+              Wirkleistung t-1
+              Wirkleistung t+0
+              Wirkleistung t+1
+              Wirkleistung t+2
+              Wirkleistung t+3
+              Wirkleistung t+4
+              Wirkleistung t+5
+              Wirkleistung t+6
+              Wirkleistung t+7
+              Wirkleistung t+8
+              Wirkleistung t+9
+              Wirkleistung t+10
+              Klasse
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Radial basis function network
+(Logistic regression applied to K-means clusters as basis functions):
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                 Class
+Variable                             0                       1                       2                       3                       4
+======================================================================================================================================
+pCluster_0_0                  1470.874                626.7818                612.4205                 96.7215                245.4963
+pCluster_0_1                 1572.8282                728.4027                 746.232               1931.6455              -3273.9921
+pCluster_1_0                -1429.5417               -550.2841               -494.5962              -1779.7218               -173.6924
+pCluster_1_1                -1953.0648               -550.3877               -587.7365               1245.4126                -15.8121
+pCluster_2_0                  994.0953                151.1102                 277.777               1088.2846                935.9515
+pCluster_2_1                 -160.9004                327.4665                449.2513                -1010.73                113.1031
+pCluster_3_0                34557.4299              33985.3465              34106.1718              35924.7908              36208.9831
+pCluster_3_1                 1648.4509                824.1809                944.0032               2760.7514               3078.7921
+pCluster_4_0                 -634.4078                456.3186              -7732.9556               2392.0308               2715.1473
+pCluster_4_1                -1120.6473               -557.2147              -4126.3695               1373.6839               1700.4114
+pCluster_5_0                 -919.0823               -625.5352              -1747.7673               -256.1077                384.4817
+pCluster_5_1                  156.3264              -2280.5136               -966.9039               -482.4467                 -239.36
+Intercept                    -285.9415                558.3345                438.2094              -1378.4091              -1699.0017
+
+
+Odds Ratios...
+                                 Class
+Variable                             0                       1                       2                       3                       4
+======================================================================================================================================
+pCluster_0_0                  Infinity   1.613935383430458E272   9.350406361066196E265   1.0130015755759841E42   4.146625467684626E106
+pCluster_0_1                  Infinity                Infinity                Infinity                Infinity                       0
+pCluster_1_0                         0                       0                       0                       0                       0
+pCluster_1_1                         0                       0                       0                Infinity                       0
+pCluster_2_0                  Infinity    4.229829209047924E65  4.3352294346602296E120                Infinity                Infinity
+pCluster_2_1                         0   1.647744858223647E142   1.280387676906275E195                       0    1.318437106412564E49
+pCluster_3_0                  Infinity                Infinity                Infinity                Infinity                Infinity
+pCluster_3_1                  Infinity                Infinity                Infinity                Infinity                Infinity
+pCluster_4_0                         0  1.5019941894777703E198                       0                Infinity                Infinity
+pCluster_4_1                         0                       0                       0                Infinity                Infinity
+pCluster_5_0                         0                       0                       0                       0    9.51196818754881E166
+pCluster_5_1      7.792433826713704E67                       0                       0                       0                       0
+
+
+Time taken to build model: 11.51 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       26400               87.9912 %
+Incorrectly Classified Instances      3603               12.0088 %
+Kappa statistic                          0.7269
+Mean absolute error                      0.0459
+Root mean squared error                  0.1511
+Relative absolute error                 29.2592 %
+Root relative squared error             53.9635 %
+Total Number of Instances            30003     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.326     0.034      0.574     0.326     0.416      0.937    0
+                 0.953     0.286      0.886     0.953     0.918      0.964    1
+                 0.993     0.002      0.99      0.993     0.991      1        2
+                 0.193     0.001      0.367     0.193     0.253      0.995    3
+                 0.643     0.002      0.486     0.643     0.554      0.989    4
+                 0.979     0          0.998     0.979     0.988      0.998    5
+Weighted Avg.    0.88      0.205      0.863     0.88      0.866      0.967
+
+=== Confusion Matrix ===
+
+     a     b     c     d     e     f   <-- classified as
+  1204  2488     0     0     0     0 |     a = 0
+   894 19990    50    12    40     0 |     b = 1
+     0    34  4730     0     0     0 |     c = 2
+     0    32     0    11    14     0 |     d = 3
+     0    22     0     7    54     1 |     e = 4
+     0     6     0     0     3   411 |     f = 5
+

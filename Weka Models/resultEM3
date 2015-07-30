@@ -1,0 +1,165 @@
+=== Run information ===
+
+Scheme:weka.clusterers.EM -I 100 -N 3 -M 1.0E-6 -S 100
+Relation:     trainingzeit-weka.filters.unsupervised.attribute.NumericToNominal-Rlast
+Instances:    30003
+Attributes:   23
+              Unixtime
+              Wirkleistung t-10
+              Wirkleistung t-9
+              Wirkleistung t-8
+              Wirkleistung t-7
+              Wirkleistung t-6
+              Wirkleistung t-5
+              Wirkleistung t-4
+              Wirkleistung t-3
+              Wirkleistung t-2
+              Wirkleistung t-1
+              Wirkleistung t+0
+              Wirkleistung t+1
+              Wirkleistung t+2
+              Wirkleistung t+3
+              Wirkleistung t+4
+              Wirkleistung t+5
+              Wirkleistung t+6
+              Wirkleistung t+7
+              Wirkleistung t+8
+              Wirkleistung t+9
+              Wirkleistung t+10
+Ignored:
+              Klasse
+Test mode:Classes to clusters evaluation on training data 
+=== Model and evaluation on training set ===
+
+
+EM
+==
+
+Number of clusters: 3
+
+
+                            Cluster
+Attribute                         0               1               2
+                             (0.65)          (0.19)          (0.15)
+====================================================================
+Unixtime
+  mean                1382721042.304 1382883327.2967 1384069686.6465
+  std. dev.              378527.0399     623204.2299       1605.7789
+
+Wirkleistung t-10
+  mean                       64.5534       1625.9768         67.5826
+  std. dev.                  75.0067        664.5888         75.1094
+
+Wirkleistung t-9
+  mean                       63.9795       1628.1705         67.2825
+  std. dev.                  72.1521        660.6154          73.766
+
+Wirkleistung t-8
+  mean                       63.6254       1629.4754         67.1667
+  std. dev.                  70.5672        658.1298         73.4592
+
+Wirkleistung t-7
+  mean                        63.569        1629.762          67.057
+  std. dev.                  70.2352        657.5963         73.1447
+
+Wirkleistung t-6
+  mean                       63.5647       1629.8817         66.9269
+  std. dev.                  70.1262        657.3863         72.7489
+
+Wirkleistung t-5
+  mean                        63.569       1629.9746         66.7932
+  std. dev.                  70.0287        657.2379         72.3237
+
+Wirkleistung t-4
+  mean                       63.5835       1630.0361         66.6558
+  std. dev.                  69.9312        657.1546         72.0108
+
+Wirkleistung t-3
+  mean                       63.5682       1630.1117          66.628
+  std. dev.                  69.8236        657.0201         71.9316
+
+Wirkleistung t-2
+  mean                       63.5633       1630.1374         66.6184
+  std. dev.                  69.7327        656.9978         71.8595
+
+Wirkleistung t-1
+  mean                       63.5231       1630.2688         66.6273
+  std. dev.                  69.6414        656.7184         71.8466
+
+Wirkleistung t+0
+  mean                       63.4722       1630.4183         66.6589
+  std. dev.                  69.5626        656.3872         71.8783
+
+Wirkleistung t+1
+  mean                       63.4608       1630.4233         66.7112
+  std. dev.                  69.5697        656.3567          72.054
+
+Wirkleistung t+2
+  mean                       63.5014       1630.2373         66.7815
+  std. dev.                   69.651        656.7593         72.1818
+
+Wirkleistung t+3
+  mean                       63.5991       1629.8775         66.8165
+  std. dev.                  69.7998        657.5582         72.2339
+
+Wirkleistung t+4
+  mean                       63.6889       1629.5472         66.8487
+  std. dev.                  69.9755        658.2821         72.2184
+
+Wirkleistung t+5
+  mean                       63.7781       1629.1702         66.9421
+  std. dev.                  70.0507        659.1399         72.3405
+
+Wirkleistung t+6
+  mean                       63.8735        1628.731         67.0868
+  std. dev.                  70.1246        660.1231         72.6986
+
+Wirkleistung t+7
+  mean                       64.0268       1628.1303         67.1869
+  std. dev.                  70.4688        661.4033         72.8928
+
+Wirkleistung t+8
+  mean                       64.2576       1627.2648         67.2884
+  std. dev.                  71.0588        663.2144          73.086
+
+Wirkleistung t+9
+  mean                       64.6549       1625.7897         67.4496
+  std. dev.                  72.3624        666.1635         73.5136
+
+Wirkleistung t+10
+  mean                       65.1489       1623.8653         67.7561
+  std. dev.                  74.1886        669.8633         74.7654
+
+
+
+Time taken to build model (full training data) : 14.65 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      19641 ( 65%)
+1       5766 ( 19%)
+2       4596 ( 15%)
+
+
+Log likelihood: -142.72729
+
+
+Class attribute: Klasse
+Classes to Clusters:
+
+     0     1     2  <-- assigned to cluster
+  2951     0   741 | 0
+ 16604   583  3799 | 1
+     0  4764     0 | 2
+     8    43     6 | 3
+    24    52     8 | 4
+    54   324    42 | 5
+
+Cluster 0 <-- 1
+Cluster 1 <-- 2
+Cluster 2 <-- 0
+
+Incorrectly clustered instances :	7894.0	 26.3107 %
+

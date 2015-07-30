@@ -1,0 +1,100 @@
+=== Run information ===
+
+Scheme:weka.clusterers.SimpleKMeans -N 3 -A "weka.core.EuclideanDistance -R first-last" -I 500 -S 10
+Relation:     trainingzeit-weka.filters.unsupervised.attribute.NumericToNominal-Rlast
+Instances:    30003
+Attributes:   23
+              Unixtime
+              Wirkleistung t-10
+              Wirkleistung t-9
+              Wirkleistung t-8
+              Wirkleistung t-7
+              Wirkleistung t-6
+              Wirkleistung t-5
+              Wirkleistung t-4
+              Wirkleistung t-3
+              Wirkleistung t-2
+              Wirkleistung t-1
+              Wirkleistung t+0
+              Wirkleistung t+1
+              Wirkleistung t+2
+              Wirkleistung t+3
+              Wirkleistung t+4
+              Wirkleistung t+5
+              Wirkleistung t+6
+              Wirkleistung t+7
+              Wirkleistung t+8
+              Wirkleistung t+9
+              Wirkleistung t+10
+Ignored:
+              Klasse
+Test mode:Classes to clusters evaluation on training data 
+=== Model and evaluation on training set ===
+
+
+kMeans
+======
+
+Number of iterations: 30
+Within cluster sum of squared errors: 6616.349530541851
+Missing values globally replaced with mean/mode
+
+Cluster centroids:
+                                           Cluster#
+Attribute                 Full Data               0               1               2
+                            (30003)         (25036)           (344)          (4623)
+===================================================================================
+Unixtime            1382958725.4267 1382974484.2188 1382951393.8256 1382873928.7478
+Wirkleistung t-10          365.2017         75.1505        946.0407       1892.7627
+Wirkleistung t-9           365.2019         73.8771        959.7209        1898.642
+Wirkleistung t-8           365.2032         72.6233        971.9767       1904.5287
+Wirkleistung t-7           365.2045         71.3759        983.6453       1910.4244
+Wirkleistung t-6           365.2048         70.1772        990.5233       1916.4058
+Wirkleistung t-5           365.2051         70.1384        913.5291       1922.3465
+Wirkleistung t-4           365.2053         70.1306        833.7733       1928.3253
+Wirkleistung t-3           365.2056          70.143        835.3605       1928.1419
+Wirkleistung t-2           365.2059         70.1514        836.4709       1928.0156
+Wirkleistung t-1           365.2061         70.1813        834.7965       1927.9801
+Wirkleistung t+0           365.2064         70.1911         832.314       1928.1133
+Wirkleistung t+1           365.2079         70.1976        829.9302       1928.2652
+Wirkleistung t+2           365.2095         70.1966        830.5523       1928.2345
+Wirkleistung t+3           365.2097         70.1796        833.0407       1928.1428
+Wirkleistung t+4           365.2099          70.151        837.1802       1927.9909
+Wirkleistung t+5           365.2101         70.1287        902.1047       1923.2819
+Wirkleistung t+6           365.2103         70.1259        983.0233       1917.2771
+Wirkleistung t+7           365.2105         71.4255        971.7151       1911.0815
+Wirkleistung t+8           365.2107         72.7179        959.2326       1905.0128
+Wirkleistung t+9           365.2119         73.9933        947.9244       1898.9552
+Wirkleistung t+10          365.2122          75.249        937.8314       1892.9081
+
+
+
+
+Time taken to build model (full training data) : 6.33 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      25036 ( 83%)
+1        344 (  1%)
+2       4623 ( 15%)
+
+
+Class attribute: Klasse
+Classes to Clusters:
+
+     0     1     2  <-- assigned to cluster
+  3692     0     0 | 0
+ 20783   203     0 | 1
+     0   141  4623 | 2
+    57     0     0 | 3
+    84     0     0 | 4
+   420     0     0 | 5
+
+Cluster 0 <-- 1
+Cluster 1 <-- No class
+Cluster 2 <-- 2
+
+Incorrectly clustered instances :	4597.0	 15.3218 %
+
