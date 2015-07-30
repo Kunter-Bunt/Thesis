@@ -18,7 +18,7 @@ Das Hinzuf"ugen eines zweiten Hiddenlayer f"uhrt zu einer Verbesserung der Klass
 Die speziell f"ur die Waschmaschine gesuchten Features schneiden schlechter als die Zeitreihen ab (Tabelle~\ref{EvalExp}). Dies soll kein gro{\ss}er R"uckschlag f"ur diese Arbeit sein, die Zeitreihen sind leichter zu berechnen und besitzen allgemeineren Charakter. Letztere Eigenschaft scheint nicht nur praktisch, sondern auch der Klassifikation dienlich zu sein.\\
 
 Ein genauerer Blick auf die Konfusionsmatrix~\ref{EvalConf} des Netzes mit dem besten Ergebnis verr"at, dass die meisten Verwechselungen zwischen Klasse 3, 4 und 5 auftreten. Das Netz hat hier offenbar Probleme die Unterschiede in den Verbrauchsspitzen zu erkennen. Diese Art von Fehlern umfasst 62 Instanzen und somit knapp $2/3$ der Fehlklassifikationen. \\
-Die 22 Fehler bei denen ein \textit{Off-Zustand} als Klasse 1 klassifiziert wurden sind im Prinzip \textit{off-by-one-Fehler}. Das Netz erkennt nicht die semantische Bedeutung des Features t+0 und klassifiziert auch solche Zeitpunkte als \textit{On-Zustand}, bei denen die Werte t+1,2,3 bzw. t-1,2,3 gr"o{\ss}er Null sind, obwohl t+0 gleich Null ist. Die restlichen Fehlklassifikationen sind "ahnlich zu betrachten, insgesamt machen die \textit{off-by-one-Fehler} mit 33 Instanzen gut $1/3$ der Fehlklassifikationen aus. \\
+Die 22 Fehler bei denen ein \textit{Off-Zustand} als Klasse 1 klassifiziert wurden sind im Prinzip \textit{off-by-one-Fehler}. Das Netz erkennt nicht die semantische Bedeutung des Features t+0 und klassifiziert auch solche Zeitpunkte als \textit{On-Zustand}, bei denen die Werte t+1,2,3 bzw. t-1,2,3 gr"o{\ss}er Null sind, obwohl t+0 gleich Null ist. Die restlichen Fehlklassifikationen sind "ahnlich zu betrachten, insgesamt machen die \textit{off-by-one-Fehler} mit 33 Instanzen gut $1/3$ der Fehlklassifikationen aus. In Tabelle~\ref{EvalPrec} finden sie weitere G"utema{\ss}e für dieses Netz, wie etwa Precision und Recall f"ur jede Klasse aufgelistet.\\
 
 \begin{table}[h]
 \begin{tabular}{l|p{4cm}|p{4cm}|l}
@@ -89,6 +89,22 @@ a & b & c & d & e & f & $\leftarrow$ classified as  \\
 \end{tabular}
 \caption[Konfusionsmatrix]{Konfusionsmatrix des Netzes mit den Features t-3 bis t+3 und den Parametern -L 0.3 -M 0.2 -N 1000 -H 13,6}
 \label{EvalConf}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{llllll|l}
+TP Rate & FP Rate & Precision & Recall & F-Measure & ROC Area & Class  \\
+0.994 & 0 & 1 & 0.994 & 0.997 & 1 & 0  \\
+1 & 0.003 & 0.999 & 1 & 0.999 & 0.999 & 1  \\
+1 & 0 & 1 & 1 & 1 & 1 & 2  \\
+0.684 & 0.001 & 0.684 & 0.684 & 0.684 & 0.978 & 3  \\
+0.619 & 0.001 & 0.619 & 0.619 & 0.619 & 0.904 & 4  \\
+0.955 & 0 & 0.966 & 0.955 & 0.96 & 0.998 & 5  \\
+ \hline
+0.997 & 0.002 & 0.997 & 0.997 & 0.997 & 0.999 & Weighted Avg. \\
+\end{tabular}
+\caption[Gütema{\ss}e]{Verschiedene G"utema{\ss}e des Netzes mit den Features t-3 bis t+3 und den Parametern -L 0.3 -M 0.2 -N 1000 -H 13,6}
+\label{EvalPrec}
 \end{table}
 
 \newpage

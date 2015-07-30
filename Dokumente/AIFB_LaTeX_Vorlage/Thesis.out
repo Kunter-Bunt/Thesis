@@ -5,20 +5,21 @@
 \BOOKMARK [2][-]{subsection.2.1}{Gemessene Daten}{section.2}% 5
 \BOOKMARK [2][-]{subsection.2.2}{Berechnete Daten}{section.2}% 6
 \BOOKMARK [2][-]{subsection.2.3}{Die Waschmaschine}{section.2}% 7
-\BOOKMARK [1][-]{section.3}{Vorverarbeitung}{}% 8
-\BOOKMARK [2][-]{subsection.3.1}{Stand der Technik}{section.3}% 9
-\BOOKMARK [2][-]{subsection.3.2}{Extrahieren der Daten}{section.3}% 10
-\BOOKMARK [2][-]{subsection.3.3}{Zeitreihen}{section.3}% 11
-\BOOKMARK [2][-]{subsection.3.4}{Spezielle Features}{section.3}% 12
-\BOOKMARK [1][-]{section.4}{Klassifizierung}{}% 13
-\BOOKMARK [2][-]{subsection.4.1}{Stand der Technik}{section.4}% 14
-\BOOKMARK [2][-]{subsection.4.2}{Weka}{section.4}% 15
-\BOOKMARK [2][-]{subsection.4.3}{Parameter}{section.4}% 16
-\BOOKMARK [1][-]{section.5}{Generierung}{}% 17
-\BOOKMARK [2][-]{subsection.5.1}{Stand der Technik}{section.5}% 18
-\BOOKMARK [2][-]{subsection.5.2}{Vorgehensweise}{section.5}% 19
-\BOOKMARK [1][-]{section.6}{Evaluation}{}% 20
-\BOOKMARK [2][-]{subsection.6.1}{Klassifizierung}{section.6}% 21
-\BOOKMARK [2][-]{subsection.6.2}{Generierung}{section.6}% 22
-\BOOKMARK [1][-]{section.7}{Fazit}{}% 23
-\BOOKMARK [1][-]{appendix.A}{Anhang}{}% 24
+\BOOKMARK [1][-]{section.3}{Problemanalyse}{}% 8
+\BOOKMARK [1][-]{section.4}{Vorverarbeitung}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Stand der Technik}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.2}{Extrahieren der Daten}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.3}{Zeitreihen}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.4}{Spezielle Features}{section.4}% 13
+\BOOKMARK [1][-]{section.5}{Klassifizierung}{}% 14
+\BOOKMARK [2][-]{subsection.5.1}{Weka}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.2}{Stand der Technik}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.3}{Parameter}{section.5}% 17
+\BOOKMARK [1][-]{section.6}{Generierung}{}% 18
+\BOOKMARK [2][-]{subsection.6.1}{Stand der Technik}{section.6}% 19
+\BOOKMARK [2][-]{subsection.6.2}{Vorgehensweise}{section.6}% 20
+\BOOKMARK [1][-]{section.7}{Evaluation}{}% 21
+\BOOKMARK [2][-]{subsection.7.1}{Klassifizierung}{section.7}% 22
+\BOOKMARK [2][-]{subsection.7.2}{Generierung}{section.7}% 23
+\BOOKMARK [1][-]{section.8}{Fazit}{}% 24
+\BOOKMARK [1][-]{appendix.A}{Anhang}{}% 25

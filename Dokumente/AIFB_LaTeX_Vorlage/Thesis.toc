@@ -5,20 +5,21 @@
 \contentsline {subsection}{\numberline {2.1}Gemessene Daten}{4}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Berechnete Daten}{5}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Die Waschmaschine}{5}{subsection.2.3}
-\contentsline {section}{\numberline {3}Vorverarbeitung}{8}{section.3}
-\contentsline {subsection}{\numberline {3.1}Stand der Technik}{8}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Extrahieren der Daten}{9}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Zeitreihen}{9}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Spezielle Features}{10}{subsection.3.4}
-\contentsline {section}{\numberline {4}Klassifizierung}{11}{section.4}
-\contentsline {subsection}{\numberline {4.1}Stand der Technik}{11}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Weka}{13}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Parameter}{13}{subsection.4.3}
-\contentsline {section}{\numberline {5}Generierung}{16}{section.5}
-\contentsline {subsection}{\numberline {5.1}Stand der Technik}{16}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Vorgehensweise}{17}{subsection.5.2}
-\contentsline {section}{\numberline {6}Evaluation}{19}{section.6}
-\contentsline {subsection}{\numberline {6.1}Klassifizierung}{19}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Generierung}{22}{subsection.6.2}
-\contentsline {section}{\numberline {7}Fazit}{26}{section.7}
-\contentsline {section}{\numberline {A}Anhang}{27}{appendix.A}
+\contentsline {section}{\numberline {3}Problemanalyse}{8}{section.3}
+\contentsline {section}{\numberline {4}Vorverarbeitung}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Stand der Technik}{9}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Extrahieren der Daten}{10}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Zeitreihen}{10}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Spezielle Features}{11}{subsection.4.4}
+\contentsline {section}{\numberline {5}Klassifizierung}{12}{section.5}
+\contentsline {subsection}{\numberline {5.1}Weka}{12}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Stand der Technik}{13}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Parameter}{14}{subsection.5.3}
+\contentsline {section}{\numberline {6}Generierung}{17}{section.6}
+\contentsline {subsection}{\numberline {6.1}Stand der Technik}{17}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Vorgehensweise}{18}{subsection.6.2}
+\contentsline {section}{\numberline {7}Evaluation}{20}{section.7}
+\contentsline {subsection}{\numberline {7.1}Klassifizierung}{20}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Generierung}{23}{subsection.7.2}
+\contentsline {section}{\numberline {8}Fazit}{27}{section.8}
+\contentsline {section}{\numberline {A}Anhang}{28}{appendix.A}
